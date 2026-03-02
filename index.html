@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FLO Competitive Intelligence</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+    .tab-on  { border-bottom: 2px solid #2563eb; color: #2563eb; }
+    .tab-off { border-bottom: 2px solid transparent; color: #64748b; }
+    .badge-Critical { background:#fee2e2; color:#b91c1c; }
+    .badge-High     { background:#ffedd5; color:#c2410c; }
+    .badge-Medium   { background:#fef9c3; color:#a16207; }
+    .badge-Low      { background:#dcfce7; color:#15803d; }
+  </style>
+</head>
+<body class="bg-slate-50 h-screen flex flex-col overflow-hidden">
+
+<!-- Header -->
+<div class="bg-white border-b border-slate-200 px-5 py-3 flex items-center justify-between shadow-sm flex-shrink-0">
+  <div class="flex items-center gap-3">
+    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-cyan-400 flex items-center justify-center text-white font-bold shadow">FLO</div>
+    <div>
+      <div class="font-bold text-slate-800">Competitive Intelligence Agent</div>
+      <div class="text-xs text-slate-400">Autonomous · GitHub Actions · Supabase · GitHub Pages · 100% Free</div>
+    </div>
+  </div>
+  <div class="flex items-center gap-3">
+    <div id="last-run" class="text-xs text-slate-400 bg-slate-100 px-3 py-1.5 rounded-full hidden"></div>
+    <a id="run-link" href="#" target="_blank"
+      class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors">
+      ▶ Trigger Run
+    </a>
+  </div>
+</div>
+
+<!-- Tabs -->
+<div class="bg-white border-b border-slate-200 px-5 flex flex-shrink-0">
+  <button onclick="setTab('dashboard')" id="tab-dashboard" class="px-4 py-2.5 text-sm font-medium tab-on">📊 Dashboard</button>
+  <button onclick="setTab('report')"    id="tab-report"    class="px-4 py-2.5 text-sm font-medium tab-off">📋 Report</button>
+  <button onclick="setTab('landscape')" id="tab-landscape" class="px-4 py-2.5 text-sm font-medium tab-off">🗺 Landscape</button>
+  <button onclick="setTab('history')"   id="tab-history"   class="px-4 py-2.5 text-sm font-medium tab-off">📅 History</button>
+</div>
+
+<!-- Content -->
+<div class="flex-1 overflow-y-auto" id="content">
+  <div class="flex items-center justify-center h-full text-slate-400">
+    <div class="text-center"><div class="text-5xl mb-3">⏳</div><p>Loading data...</p></div>
+  </div>
+</div>
+
+<script>
+const COMPETITORS_META = {
+  B2B: ["SmartRent","Quext IoT","Yardi Utility Management","RealPage Utility Management","Conservice","Livable","Ratio Utilities"],
+  B2C: ["Phyn Plus","Grohe Sense Guard","Resideo Leak Defense","Leak Smart","Govee Water Sensor","Alert Labs"],
+};
+
+// Replace with your GitHub repo path after setup
+const GITHUB_REPO = "YOUR_USERNAME/flo-ci-agent";
+const ACTIONS_URL = `https://github.com/${GITHUB_REPO}/actions/workflows/research.yml`;
+
+let S = { reports: [], settings: {}, tab: "dashboard", selReport: null, selComp: null, seg: "B2B" };
+
+// ── Load data ─────────────────────────────────────────────────────────────────
+async function init() {
+  document.getElementById("run-link").href = ACTIONS_URL;
+  try {
+    const res = await fetch("data.json?t=" + Date.now());
+    const d = await res.json();
+    S.reports = d.reports || [];
+    S.settings = d.settings || {};
+    if (S.reports.length) S.selReport = S.reports[0];
+    if (S.settings.lastRun) {
+      const el = document.getElementById("last-run");
+      const next = daysNext();
+      el.textContent = `Last run ${fmt(S.settings.lastRun)} · Next in ${next}d`;
+      el.classList.remove("hidden");
+    }
+  } catch(e) {
+    console.error("Failed to load data.json:", e);
+  }
+  render();
+}
+
+// ── Helpers ───────────────────────────────────────────────────────────────────
+function fmt(iso) { return new Date(iso).toLocaleDateString(); }
+function fmtFull(iso) { return new Date(iso).toLocaleString(); }
+function daysNext() {
+  if (!S.settings.lastRun) return 0;
+  return Math.max(0, Math.ceil((new Date(S.settings.lastRun).getTime() + 7*86400000 - Date.now()) / 86400000));
+}
+function badge(level) {
+  return `<span class="text-xs px-2 py-0.5 rounded-full font-semibold badge-${level}">${level}</span>`;
+}
+function md(text) {
+  if (!text) return "<p class='text-slate-400 text-sm'>No content.</p>";
+  return text.split("\n").map(line => {
+    if (line.startsWith("## "))  return `<h2 class="text-base font-bold text-slate-800 mt-4 mb-1 pt-3 border-t border-slate-100">${line.slice(3)}</h2>`;
+    if (line.startsWith("### ")) return `<h3 class="text-sm font-semibold text-slate-700 mt-3 mb-1">${line.slice(4)}</h3>`;
+    if (line.match(/^\d+\.\s/))  return `<p class="text-sm text-slate-700 ml-3 my-0.5">${line}</p>`;
+    if (line.startsWith("- "))   return `<div class="flex gap-2 ml-3 my-0.5"><span class="text-blue-400 text-xs mt-1">●</span><span class="text-sm text-slate-700">${line.slice(2).replace(/\*\*(.*?)\*\*/g,"<strong>$1</strong>")}</span></div>`;
+    if (!line.trim())             return `<div class="h-1"></div>`;
+    return `<p class="text-sm text-slate-700 leading-relaxed my-0.5">${line.replace(/\*\*(.*?)\*\*/g,"<strong>$1</strong>")}</p>`;
+  }).join("");
+}
+
+// ── Tab ───────────────────────────────────────────────────────────────────────
+function setTab(t) {
+  S.tab = t;
+  ["dashboard","report","landscape","history"].forEach(id =>
+    document.getElementById(`tab-${id}`).className = `px-4 py-2.5 text-sm font-medium ${t===id?"tab-on":"tab-off"}`);
+  render();
+}
+
+// ── Render ────────────────────────────────────────────────────────────────────
+function render() {
+  const c = document.getElementById("content");
+  const latest = S.reports[0];
+  const highs = latest?.competitor_data?.filter(x => x.threatLevel==="Critical"||x.threatLevel==="High")||[];
+  const total = COMPETITORS_META.B2B.length + COMPETITORS_META.B2C.length;
+
+  if (S.tab === "dashboard") {
+    c.innerHTML = `<div class="p-5 space-y-4">
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+        ${[
+          {l:"Tracked",    v:total,           s:`${COMPETITORS_META.B2B.length} B2B · ${COMPETITORS_META.B2C.length} B2C`, col:"blue"},
+          {l:"Reports",    v:S.reports.length, s:S.reports.length?`Last ${fmt(S.reports[0].generated_at)}`:"None yet",       col:"purple"},
+          {l:"High Threats",v:highs.length,    s:highs.map(x=>x.competitor).slice(0,2).join(", ")||"Run to detect",         col:"red"},
+          {l:"Next Cron",  v:S.settings.lastRun?`${daysNext()}d`:"Soon", s:"Every Mon 9am UTC", col:"green"},
+        ].map(card=>`
+          <div class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm">
+            <div class="text-3xl font-bold text-${card.col}-600">${card.v}</div>
+            <div class="text-xs font-semibold text-slate-700 mt-1">${card.l}</div>
+            <div class="text-xs text-slate-400 mt-0.5 truncate">${card.s}</div>
+          </div>`).join("")}
+      </div>
+
+      <div class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm">
+        <div class="font-semibold text-sm mb-1">How to trigger a manual run</div>
+        <p class="text-xs text-slate-500 mb-3">Click the button below → GitHub Actions page → "Run workflow" → choose scope → Run.</p>
+        <a href="${ACTIONS_URL}" target="_blank"
+          class="inline-block bg-slate-800 hover:bg-slate-900 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+          Open GitHub Actions ↗
+        </a>
+        <p class="text-xs text-slate-400 mt-2">Agent also runs automatically every Monday at 9am UTC — no action needed.</p>
+      </div>
+
+      <div class="grid grid-cols-2 gap-4">
+        ${["B2B","B2C"].map(seg=>`
+          <div class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm">
+            <div class="font-semibold text-sm mb-3">${seg==="B2B"?"🏢 B2B":"🏠 B2C"}</div>
+            ${COMPETITORS_META[seg].map(name => {
+              const d = latest?.competitor_data?.find(x=>x.competitor===name);
+              return `<div class="flex items-center justify-between py-2 border-b border-slate-50 last:border-0 cursor-pointer hover:bg-slate-50 rounded px-1"
+                onclick="${d?`pickComp(${JSON.stringify(JSON.stringify(d))})`:""}">
+                <span class="text-sm font-medium">${name}</span>
+                ${d?badge(d.threatLevel):`<span class="text-xs text-slate-300">Pending</span>`}
+              </div>`;
+            }).join("")}
+          </div>`).join("")}
+      </div>
+
+      ${!latest?`<div class="bg-blue-50 border border-blue-100 rounded-xl p-8 text-center">
+        <div class="text-5xl mb-3">🤖</div>
+        <div class="font-bold text-blue-800 text-lg mb-1">Agent Ready</div>
+        <div class="text-sm text-blue-600">No runs yet. Trigger the first run from GitHub Actions, or wait for Monday's cron.</div>
+      </div>`:""}
+    </div>`;
+  }
+
+  else if (S.tab === "report") {
+    if (!S.selReport) {
+      c.innerHTML = `<div class="flex flex-col items-center justify-center h-64 text-slate-400 text-center"><div class="text-4xl mb-3">📋</div><p>No reports yet.</p></div>`;
+      return;
+    }
+    c.innerHTML = `<div class="p-5">
+      <div class="flex items-center justify-between mb-4">
+        <div>
+          <h2 class="font-bold text-lg">Weekly Competitive Intelligence Report</h2>
+          <div class="text-sm text-slate-400">Generated ${fmtFull(S.selReport.generated_at)} · ${S.selReport.competitor_data?.length||0} competitors · ${S.selReport.scope}</div>
+        </div>
+        ${S.reports.length>1?`<select onchange="pickReport(this.value)" class="border border-slate-200 rounded-lg px-3 py-1.5 text-sm">
+          ${S.reports.map((r,i)=>`<option value="${i}" ${i===S.reports.indexOf(S.selReport)?"selected":""}>${i===0?"Latest — ":""}${fmt(r.generated_at)}</option>`).join("")}
+        </select>`:""}
+      </div>
+      <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">${md(S.selReport.executive_report)}</div>
+    </div>`;
+  }
+
+  else if (S.tab === "landscape") {
+    if (!latest?.competitor_data?.length) {
+      c.innerHTML = `<div class="flex flex-col items-center justify-center h-64 text-slate-400 text-center"><div class="text-4xl mb-3">🗺</div><p>Run the agent to populate the landscape.</p></div>`;
+      return;
+    }
+    const segData = latest.competitor_data.filter(x=>x.segment===S.seg);
+    c.innerHTML = `<div class="p-5">
+      <div class="grid grid-cols-3 gap-4">
+        <div class="col-span-1">
+          <div class="flex gap-2 mb-3">
+            ${["B2B","B2C"].map(s=>`<button onclick="setSeg('${s}')"
+              class="px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${S.seg===s?"bg-blue-600 text-white":"bg-white border border-slate-200 text-slate-600"}">${s}</button>`).join("")}
+          </div>
+          ${segData.map(comp=>`
+            <div onclick="pickComp(${JSON.stringify(JSON.stringify(comp))})"
+              class="flex items-center justify-between px-3 py-2.5 rounded-lg cursor-pointer transition-colors mb-1
+              ${S.selComp?.competitor===comp.competitor?"bg-blue-600 text-white":"bg-white hover:bg-slate-100 border border-slate-200"}">
+              <span class="text-sm font-medium">${comp.competitor}</span>
+              ${badge(comp.threatLevel)}
+            </div>`).join("")}
+        </div>
+        <div class="col-span-2">
+          ${S.selComp ? `
+            <div class="bg-white rounded-xl border border-slate-200 p-5 shadow-sm space-y-4">
+              <div class="flex justify-between items-start">
+                <div><h3 class="font-bold text-lg">${S.selComp.competitor}</h3>
+                  <div class="text-sm text-slate-400">${S.selComp.segment} · ${fmt(S.selComp.researchDate)}</div></div>
+                ${badge(S.selComp.threatLevel)}
+              </div>
+              ${S.selComp.strategicSignal?`<div class="bg-amber-50 border border-amber-100 rounded-lg px-4 py-3">
+                <div class="text-xs font-bold text-amber-700 mb-1">⚡ KEY SIGNAL</div>
+                <div class="text-sm text-amber-800">${S.selComp.strategicSignal}</div></div>`:""}
+              ${S.selComp.pricing?`<div><div class="text-xs font-bold text-slate-500 uppercase mb-1">Pricing</div>
+                <div class="text-sm text-slate-700">${S.selComp.pricing}</div></div>`:""}
+              <div class="grid grid-cols-2 gap-4">
+                <div><div class="text-xs font-bold text-green-700 uppercase mb-2">✅ Strengths</div>
+                  <ul>${(S.selComp.strengths||[]).map(s=>`<li class="text-sm flex gap-2 mb-1"><span class="text-green-400 text-xs">●</span>${s}</li>`).join("")}</ul></div>
+                <div><div class="text-xs font-bold text-red-700 uppercase mb-2">🔴 Weaknesses</div>
+                  <ul>${(S.selComp.weaknesses||[]).map(w=>`<li class="text-sm flex gap-2 mb-1"><span class="text-red-400 text-xs">●</span>${w}</li>`).join("")}</ul></div>
+              </div>
+              ${(S.selComp.recentDevelopments||[]).length?`<div>
+                <div class="text-xs font-bold text-blue-700 uppercase mb-2">📰 Recent Developments</div>
+                <ul>${S.selComp.recentDevelopments.map(d=>`<li class="text-sm flex gap-2 mb-1"><span class="text-blue-400 text-xs">●</span>${d}</li>`).join("")}</ul></div>`:""}
+              ${S.selComp.floAdvantage?`<div class="bg-blue-50 border border-blue-100 rounded-lg px-4 py-3">
+                <div class="text-xs font-bold text-blue-700 mb-1">🎯 FLO ADVANTAGE</div>
+                <div class="text-sm text-blue-800">${S.selComp.floAdvantage}</div></div>`:""}
+            </div>` : `<div class="flex items-center justify-center h-full text-slate-400 text-sm">← Select a competitor</div>`}
+        </div>
+      </div>
+    </div>`;
+  }
+
+  else if (S.tab === "history") {
+    c.innerHTML = `<div class="p-5">
+      <h2 class="font-bold text-lg mb-4">Report History</h2>
+      ${!S.reports.length
+        ? `<div class="text-slate-400 text-center py-16">No reports yet.</div>`
+        : `<div class="space-y-3">
+          ${S.reports.map((r,i)=>`
+            <div onclick="pickAndView(${i})" class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm cursor-pointer hover:border-blue-300 transition-colors">
+              <div class="flex items-center justify-between">
+                <div>
+                  <span class="font-semibold text-sm">${i===0?"✨ Latest — ":""}${fmtFull(r.generated_at)}</span>
+                  <div class="text-xs text-slate-400 mt-0.5">${r.competitor_data?.length||0} competitors · scope: ${r.scope}</div>
+                </div>
+                <div class="flex gap-1">
+                  ${[...new Set(r.competitor_data?.map(x=>x.threatLevel)||[])].map(l=>badge(l)).join("")}
+                </div>
+              </div>
+              ${r.errors?.length?`<div class="text-xs text-red-400 mt-1">⚠️ ${r.errors.length} error(s)</div>`:""}
+            </div>`).join("")}
+          </div>`}
+    </div>`;
+  }
+}
+
+// ── Event handlers ────────────────────────────────────────────────────────────
+function pickComp(jsonStr) { S.selComp = JSON.parse(jsonStr); setTab("landscape"); }
+function setSeg(s) { S.seg = s; render(); }
+function pickReport(i) { S.selReport = S.reports[parseInt(i)]; render(); }
+function pickAndView(i) { S.selReport = S.reports[i]; setTab("report"); }
+
+init();
+</script>
+</body>
+</html>
