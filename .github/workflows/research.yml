@@ -1,0 +1,54 @@
+name: FLO Competitive Intelligence Agent
+
+on:
+  schedule:
+    - cron: "0 9 * * 1"
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: "Research scope"
+        required: false
+        default: "full"
+        type: choice
+        options:
+          - full
+          - B2B
+          - B2C
+
+jobs:
+  run-research:
+    name: Run Competitive Research
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: scripts/package.json
+      - name: Install dependencies
+        run: cd scripts && npm ci
+      - name: Run research agent
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          SCOPE: ${{ github.event.inputs.scope || 'full' }}
+        run: cd scripts && node run-research.js
+      - name: Rebuild dashboard data
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        run: cd scripts && node build-dashboard.js
+      - name: Commit updated dashboard
+        run: |
+          git config --global user.name "FLO CI Agent"
+          git config --global user.email "ci-agent@flo.local"
+          git add docs/data.json
+          git diff --staged --quiet || git commit -m "chore: update CI data [$(date -u '+%Y-%m-%d')]"
+          git push
