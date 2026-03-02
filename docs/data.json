@@ -1,1 +1,74 @@
-{"reports":[],"settings":{"lastRun":null},"builtAt":null}
+{
+  "reports": [
+    {
+      "id": 1,
+      "generated_at": "2026-03-02T21:04:51.617+00:00",
+      "scope": "full",
+      "competitor_data": [],
+      "executive_report": "",
+      "errors": [
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CYew388BwHxjuMznLEd44\"}",
+          "competitor": "SmartRent"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CYew38ZVB5bPgDm731Bq5\"}",
+          "competitor": "Quext IoT"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CYew396ELkP6QmwyXX5tm\"}",
+          "competitor": "Yardi Utility Management"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CYew3AhUPRxdEzfMxuAcC\"}",
+          "competitor": "RealPage Utility Management"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CYew3CZqPKTBdu9q8iiP2\"}",
+          "competitor": "Conservice"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CYew3EJ1wpgdsGTafYbXj\"}",
+          "competitor": "Livable"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CYew3F6PRcnb27ib4muHM\"}",
+          "competitor": "Ratio Utilities"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CYew3GA8hxoC2xUVCBBkJ\"}",
+          "competitor": "Phyn Plus"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CYew3HYEaKkpjqbJL529s\"}",
+          "competitor": "Grohe Sense Guard"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CYew3KEBJBE4eNLaMSbNp\"}",
+          "competitor": "Resideo Leak Defense"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CYew3L6GfBBtmUzWHiA7a\"}",
+          "competitor": "Leak Smart"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CYew3MXM29ySzWR4fToiU\"}",
+          "competitor": "Govee Water Sensor"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CYew3MwtbPYRb1Rff936B\"}",
+          "competitor": "Alert Labs"
+        },
+        {
+          "step": "report_synthesis",
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CYew3NjXFiZChsNjPkwB1\"}"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "lastRun": "2026-03-02T21:04:51.617+00:00",
+    "scope": "full"
+  },
+  "builtAt": "2026-03-02T21:04:52.805Z"
+}
