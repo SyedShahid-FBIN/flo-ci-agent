@@ -30,7 +30,7 @@ jobs:
         with:
           node-version: "20"
       - name: Install dependencies
-        run: cd scripts && npm ci
+        run: cd scripts && npm install
       - name: Run research agent
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
