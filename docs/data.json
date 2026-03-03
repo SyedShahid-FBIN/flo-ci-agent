@@ -1,6 +1,295 @@
 {
   "reports": [
     {
+      "id": 13,
+      "generated_at": "2026-03-03T21:21:42.89+00:00",
+      "scope": "full",
+      "competitor_data": [
+        {
+          "pricing": "Enterprise pricing not publicly disclosed; residents pay $5 convenience fee for online payments; complaints about high fees and billing inaccuracies",
+          "segment": "B2B",
+          "strengths": [
+            "Comprehensive B2B utility management suite with expense management, resident billing, and submetering",
+            "Integration with major property management systems (OneSite, Entrata, MRI)",
+            "Industry's largest utility expense database and AI-powered automation",
+            "Full-service solution handling billing, payment processing, and regulatory compliance",
+            "Strong market presence in multifamily property management"
+          ],
+          "competitor": "RealPage Utility Management",
+          "weaknesses": [
+            "Recent DOJ settlement creates operational restrictions and compliance monitoring",
+            "Poor customer reviews citing billing errors, lack of transparency, and customer service issues",
+            "High convenience fees and complex autopay setup process frustrate residents",
+            "Legal and regulatory scrutiny may limit future product development",
+            "No actual smart water monitoring or leak detection capabilities"
+          ],
+          "threatLevel": "Medium",
+          "floAdvantage": "FLO offers proactive smart water leak detection and shutoff technology while RealPage focuses only on billing and expense management without preventive monitoring",
+          "isNewEntrant": false,
+          "researchDate": "2026-03-03",
+          "strategicSignal": "RealPage dominates multifamily utility billing/management but recent antitrust settlement creates opportunity for FLO to position as innovative alternative offering actual smart water protection vs pure billing services",
+          "threatRationale": "Strong B2B presence in multifamily utility management but lacks smart monitoring capabilities and faces ongoing regulatory constraints.",
+          "recentDevelopments": [
+            "November 2025 DOJ settlement over antitrust allegations restricts data usage and pricing algorithms",
+            "Required to stop using competitors' nonpublic information and geographic models narrower than state level",
+            "SimpleBills acquisition expanded student housing utility billing capabilities",
+            "Platform migration to RealPage Unified Platform completed by December 2022"
+          ]
+        },
+        {
+          "pricing": "Monthly service fees charged to residents for utility billing administration, typically $5-20/month depending on services (water, sewer, electric, gas, trash), with property owners paying separate fees for platform services and expense management",
+          "segment": "B2B",
+          "strengths": [
+            "Market leader with 300,000+ properties and nearly 8 million units managed nationwide",
+            "Comprehensive platform integrating billing, metering, analytics, and ESG reporting across all utility types",
+            "Strong private equity backing with $1.58B raised and major institutional investors",
+            "End-to-end utility management from expense management to resident billing with RUBS capabilities",
+            "Recent expansion into telecom/internet services through Onboard acquisition"
+          ],
+          "competitor": "Conservice",
+          "weaknesses": [
+            "Customer service issues with frequent rep changes and 24-hour+ response times",
+            "Manual processes including spreadsheet-based auditing that can introduce errors",
+            "Limited real-time data capabilities compared to newer smart water technologies",
+            "Complex approval processes requiring property managers to review large spreadsheets",
+            "Primarily focused on billing/administrative functions rather than leak detection or water safety"
+          ],
+          "threatLevel": "Medium",
+          "floAdvantage": "FLO's smart water shutoff technology provides real-time leak detection and automatic water protection, addressing a critical gap in Conservice's billing-focused platform that lacks proactive water damage prevention capabilities",
+          "isNewEntrant": false,
+          "researchDate": "2026-03-03",
+          "strategicSignal": "Conservice's $1.58B funding and Onboard acquisition signals aggressive expansion into smart building technologies - FLO should monitor potential moves into water monitoring/protection space",
+          "threatRationale": "Dominant B2B utility management platform with massive scale and recent expansion into smart technology, but focused on billing rather than water protection/leak detection.",
+          "recentDevelopments": [
+            "Major ownership change with TPG Capital acquiring majority stake, Advent International retaining significant stake, and TA Associates exiting (December 2025)",
+            "Acquired Onboard, a telecom and technology management platform for bulk internet and smart home offerings (May 2024)",
+            "Raised $1.58B in private equity funding and serves nearly 8 million units nationwide",
+            "Certified as Most Loved Workplace and won 2024 ENERGY STAR Partner of the Year Award"
+          ]
+        },
+        {
+          "pricing": "No upfront costs, no unit minimums, no long-term contracts required, flexible pricing model that adapts to property size",
+          "segment": "B2B",
+          "strengths": [
+            "Established RUBS platform with over a decade of experience in utility cost recovery",
+            "Can recover up to 90% of utility costs through RUBS allocation formulas",
+            "Comprehensive utility coverage including water, sewer, electricity, gas, and trash",
+            "AppFolio integration for seamless property management workflows",
+            "Tenant-facing portal for transparent billing and online payments",
+            "Customizable allocation factors for diverse property types"
+          ],
+          "competitor": "Livable",
+          "weaknesses": [
+            "Limited to RUBS allocation method rather than actual usage submetering",
+            "No real-time leak detection or water monitoring capabilities",
+            "Potential tenant pushback due to perception of unfair cost allocation",
+            "Focused primarily on cost recovery rather than conservation technology",
+            "No smart water shutoff or IoT device offerings"
+          ],
+          "threatLevel": "Medium",
+          "floAdvantage": "FLO offers actual leak detection, real-time monitoring, and smart water shutoff technology while Livable only provides utility cost allocation",
+          "isNewEntrant": false,
+          "researchDate": "2026-03-03",
+          "strategicSignal": "RUBS market is mature with established players focusing on cost recovery rather than smart water technology - opportunity for FLO to differentiate with actual leak detection and prevention",
+          "threatRationale": "Livable serves B2B multifamily market with utility billing but lacks smart water technology and monitoring capabilities that FLO provides",
+          "recentDevelopments": [
+            "Integration with AppFolio property management platform to streamline RUBS implementation",
+            "Attending 2024 Property Management Association trade shows to expand B2B presence",
+            "Partnerships with trash management services like Strategic Sanitation to expand utility coverage",
+            "Expansion into solar energy cost allocation services for multifamily properties"
+          ]
+        },
+        {
+          "pricing": "RUBS services typically offered at no upfront cost to property owners, with revenue sharing model from resident billing. Avoids $1,500-$2,000 per apartment submeter installation costs. Monthly resident charges range $30-70 for water, $100-150 total utilities",
+          "segment": "B2B",
+          "strengths": [
+            "No capital investment required vs submetering",
+            "Fast implementation without infrastructure changes",
+            "Proven 5-27% utility usage reduction through resident accountability",
+            "Suitable for older properties where submetering impossible",
+            "Regulatory compliance expertise across 48+ states"
+          ],
+          "competitor": "Ratio Utilities (RUBS Market Segment)",
+          "weaknesses": [
+            "Less precise than actual usage measurement",
+            "Potential tenant resistance to billing changes",
+            "Formula-based allocation may not reflect true individual usage",
+            "Limited enforcement options compared to individual meters",
+            "Requires ongoing resident data management for accuracy"
+          ],
+          "threatLevel": "Medium",
+          "floAdvantage": "FLO's smart water shutoff provides actual leak detection and prevention vs RUBS' billing-based conservation approach",
+          "isNewEntrant": false,
+          "researchDate": "2026-03-03",
+          "strategicSignal": "RUBS market growth indicates strong demand for multifamily water management solutions - opportunity for FLO to partner with RUBS providers or target same customer base with leak prevention value proposition",
+          "threatRationale": "RUBS addresses cost allocation not leak prevention, complementary rather than competitive to FLO's core offering",
+          "recentDevelopments": [
+            "RUBS market showing strong growth with 5-27% water usage reduction through conservation incentives",
+            "Increasing adoption of automated RUBS platforms with property management software integration",
+            "Growing regulatory complexity requiring specialized compliance expertise",
+            "Market consolidation with companies like Anchor (formerly Banyan) expanding service offerings"
+          ]
+        },
+        {
+          "pricing": "Premium pricing at ~$800 MSRP, though frequently discounted to $500-600 range; Water Security Kit with 3 sensors priced at ~$1,577; Professional installation required (~$200+ additional)",
+          "segment": "B2C",
+          "strengths": [
+            "Premium German engineering with brass components vs competitors' plastic",
+            "Comprehensive monitoring: water pressure, flow, temperature, humidity, frost detection",
+            "Self-learning AqualQ algorithm adapts to household consumption patterns",
+            "Automatic shutoff capability with manual override options",
+            "Works offline during connectivity loss",
+            "Strong brand reputation in plumbing industry",
+            "Multiple awards for innovation and design"
+          ],
+          "competitor": "Grohe Sense Guard",
+          "weaknesses": [
+            "Limited to cold water lines only with max 1-inch pipe size",
+            "App interface criticized as unintuitive and unresponsive",
+            "WiFi connectivity issues reported by users",
+            "Requires professional plumber installation",
+            "Some false positives requiring customer service troubleshooting",
+            "Only supports 2.4GHz WiFi networks"
+          ],
+          "threatLevel": "Medium",
+          "floAdvantage": "FLO's broader ecosystem approach with hot/cold monitoring, simpler installation process, and more intuitive app experience vs Grohe's premium but complex solution",
+          "isNewEntrant": false,
+          "researchDate": "2026-03-03",
+          "strategicSignal": "Grohe's premium positioning validates smart water shutoff market maturity but their installation barriers create opportunity for FLO's DIY-friendly approach",
+          "threatRationale": "Premium brand with strong reputation but limited by installation complexity and cold water restrictions.",
+          "recentDevelopments": [
+            "App updates to version 2.4.5 in June 2025 with bug fixes and improved functionality",
+            "Enhanced integration capabilities with smart home systems including Nest",
+            "Regular firmware updates and improved offline protection capabilities",
+            "Ongoing app improvements including swipe-to-delete notifications and better connectivity status"
+          ]
+        },
+        {
+          "pricing": "Previously offered sensors at $69 each, shutoff valves at $159-699 for bundles, snap-on valve controllers available through various retailers",
+          "segment": "B2C",
+          "strengths": [
+            "Patented motorized brass valve technology with <5 second shutoff",
+            "Strong smart home integration (Alexa, Google, Nest, Wink)",
+            "Professional installation network established",
+            "Battery backup and automatic cleaning cycles"
+          ],
+          "competitor": "LeakSmart",
+          "weaknesses": [
+            "Company defunct with no cloud services operational",
+            "WiFi sensors completely non-functional without cloud",
+            "No ongoing support or warranty coverage",
+            "Customer base abandoned with no migration path"
+          ],
+          "threatLevel": "Low",
+          "floAdvantage": "FLO has active business operations and ongoing cloud services while LeakSmart is completely defunct",
+          "isNewEntrant": false,
+          "researchDate": "2026-03-03",
+          "strategicSignal": "LeakSmart's failure demonstrates the critical importance of sustainable business models and reliable cloud infrastructure in smart water management - a key differentiator for FLO's continued operations",
+          "threatRationale": "LeakSmart poses no competitive threat as the company is out of business with discontinued products and services.",
+          "recentDevelopments": [
+            "Company went out of business in 2024, with parent company Waxman discontinuing the brand and shutting down cloud services",
+            "Products no longer function as web services and app discontinued",
+            "Listed as 'deadpooled' company on Tracxn as of 2025",
+            "Some products still available through third-party retailers but lack cloud support"
+          ]
+        },
+        {
+          "pricing": "Gateway + 3 sensors bundle $54-57, individual sensors $13-16, 5-sensor packs $28-74 depending on model and promotions",
+          "segment": "B2C",
+          "strengths": [
+            "Extremely affordable pricing point compared to premium competitors",
+            "Long-range LoRa/Sub-1GHz technology with up to 1968ft range",
+            "5-year battery life significantly exceeds industry average",
+            "Supports up to 100 sensors per gateway for extensive coverage",
+            "Strong retail presence on Amazon with frequent promotional pricing"
+          ],
+          "competitor": "Govee Water Sensor",
+          "weaknesses": [
+            "Detection-only capability with no water shutoff functionality",
+            "Requires separate gateway hardware that only supports 2.4GHz WiFi",
+            "Limited to basic leak detection without flow monitoring or analytics",
+            "Reliability issues reported with gateway connectivity requiring periodic resets",
+            "No professional monitoring or insurance integration services"
+          ],
+          "threatLevel": "Low",
+          "floAdvantage": "FLO provides complete water management system with automatic shutoff, professional monitoring, insurance partnerships, and comprehensive analytics vs Govee's basic detection-only approach",
+          "isNewEntrant": false,
+          "researchDate": "2026-03-03",
+          "strategicSignal": "Growing consumer awareness of water leak detection at ultra-low price points may create market education opportunity for FLO to upsell comprehensive protection",
+          "threatRationale": "Operates in different market segment focused on basic affordable detection rather than comprehensive water management and shutoff solutions",
+          "recentDevelopments": [
+            "Launched Water Leak Detector 1s with 1804ft ultra-long range communication in March 2025",
+            "Introduced 'Find Device' feature to locate misplaced sensors",
+            "Extended battery life to 5 years vs previous 2-year average",
+            "Upgraded to 105dB customizable alarm with 4 volume levels",
+            "Added dual sensor probe design for both drip and flood detection"
+          ]
+        },
+        {
+          "pricing": "No specific B2C pricing found; primarily commercial/enterprise focus with quote-based pricing",
+          "segment": "B2B",
+          "strengths": [
+            "Enterprise focus with 12,000+ buildings protected",
+            "Cellular connectivity - no WiFi dependency",
+            "Tool-free installation in seconds",
+            "Fortune 500 backing (Watsco subsidiary)",
+            "Comprehensive AI platform (AlertAQ) with machine learning",
+            "Proven ROI - $100M+ saved, 12B+ gallons conserved",
+            "Automatic shut-off valves up to 6 inches",
+            "24/7 phone call alerts"
+          ],
+          "competitor": "Alert Labs",
+          "weaknesses": [
+            "No clear B2C residential offering despite query specification",
+            "Complex enterprise platform may be overkill for homeowners",
+            "Requires cellular connectivity which adds ongoing costs",
+            "Limited consumer-friendly marketing or pricing transparency",
+            "Focused primarily on commercial/multifamily buildings"
+          ],
+          "threatLevel": "Low",
+          "floAdvantage": "FLO's ~$500 smart shutoff with clear B2C pricing and homeowner focus vs Alert Labs' enterprise-only commercial approach",
+          "isNewEntrant": false,
+          "researchDate": "2026-03-03",
+          "strategicSignal": "Alert Labs demonstrates strong commercial traction but avoided residential B2C market, suggesting FLO's consumer focus remains differentiated",
+          "threatRationale": "Alert Labs focuses entirely on commercial/enterprise B2B market with no clear B2C residential offering.",
+          "recentDevelopments": [
+            "Won 2025 BGIS Supplier Innovation Award (February 2026)",
+            "Prevented courthouse flood with AlertAQ system (December 2025)",
+            "Sponsored Impact Film Festival for safe water access (November 2025)",
+            "Published commercial water shut-off strategies guide (November 2025)",
+            "Helped Michigan office building avoid water damage with AlertAQ (November 2025)"
+          ]
+        }
+      ],
+      "executive_report": "",
+      "errors": [
+        {
+          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgpcp6s6mGAham2d3Puc\"}",
+          "competitor": "SmartRent"
+        },
+        {
+          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgphMEjABzhnqHJyb1Nb\"}",
+          "competitor": "Quext IoT"
+        },
+        {
+          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgpmtmf8kvHucXMVuH8N\"}",
+          "competitor": "Yardi Utility Management"
+        },
+        {
+          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgqSgoAgjubKibcohAHs\"}",
+          "competitor": "Phyn Plus"
+        },
+        {
+          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgqhoa8F9seefisQ6nj5\"}",
+          "competitor": "Resideo Leak Defense"
+        },
+        {
+          "step": "report_synthesis",
+          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgr8qk3HSwXTKHShRj7C\"}"
+        }
+      ]
+    },
+    {
       "id": 12,
       "generated_at": "2026-03-03T20:51:06.36+00:00",
       "scope": "full",
@@ -979,76 +1268,11 @@
           "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgfL6Sc7ccxjydkGu3u3\"}"
         }
       ]
-    },
-    {
-      "id": 3,
-      "generated_at": "2026-03-02T21:16:04.344+00:00",
-      "scope": "full",
-      "competitor_data": [],
-      "executive_report": "",
-      "errors": [
-        {
-          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CYewtnthBNsQv5xdvceA2\"}",
-          "competitor": "SmartRent"
-        },
-        {
-          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CYewtp5P5DiZ2MtdAov7P\"}",
-          "competitor": "Quext IoT"
-        },
-        {
-          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CYewtqNXGoRpw5AZAQkWm\"}",
-          "competitor": "Yardi Utility Management"
-        },
-        {
-          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CYewtr9Q8NtudhqgLKA1W\"}",
-          "competitor": "RealPage Utility Management"
-        },
-        {
-          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CYewtrpaxC8R67Wvrd4S9\"}",
-          "competitor": "Conservice"
-        },
-        {
-          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CYewtsS3EmgrgRQ3FbhLQ\"}",
-          "competitor": "Livable"
-        },
-        {
-          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CYewtt8DPrd7rCCG7xed1\"}",
-          "competitor": "Ratio Utilities"
-        },
-        {
-          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CYewtuESW8q1u5igX6QNB\"}",
-          "competitor": "Phyn Plus"
-        },
-        {
-          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CYewtuov15yMNBkXUtVng\"}",
-          "competitor": "Grohe Sense Guard"
-        },
-        {
-          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CYewtvNeZR24yPx1siypz\"}",
-          "competitor": "Resideo Leak Defense"
-        },
-        {
-          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CYewtw6onoNYEvJvdRx74\"}",
-          "competitor": "Leak Smart"
-        },
-        {
-          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CYewtwpxXatm1PwX9DKKT\"}",
-          "competitor": "Govee Water Sensor"
-        },
-        {
-          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CYewtxTAbjxDVvyzJLnAZ\"}",
-          "competitor": "Alert Labs"
-        },
-        {
-          "step": "report_synthesis",
-          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CYewty3dazt5kGf5npE4C\"}"
-        }
-      ]
     }
   ],
   "settings": {
-    "lastRun": "2026-03-03T20:51:06.36+00:00",
+    "lastRun": "2026-03-03T21:21:42.89+00:00",
     "scope": "full"
   },
-  "builtAt": "2026-03-03T20:51:07.831Z"
+  "builtAt": "2026-03-03T21:21:44.283Z"
 }
