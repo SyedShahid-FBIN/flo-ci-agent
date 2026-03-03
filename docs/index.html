@@ -29,64 +29,60 @@
     <div id="last-run" class="text-xs text-slate-400 bg-slate-100 px-3 py-1.5 rounded-full hidden"></div>
     <a href="https://github.com/SyedShahid-FBIN/flo-ci-agent/actions/workflows/research.yml" target="_blank"
       class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold">
-      ▶ Trigger Run
+      &#9654; Trigger Run
     </a>
   </div>
 </div>
 
 <div class="bg-white border-b border-slate-200 px-5 flex flex-shrink-0">
-  <button onclick="setTab('dashboard')" id="tab-dashboard" class="px-4 py-2.5 text-sm font-medium tab-on">📊 Dashboard</button>
-  <button onclick="setTab('report')"    id="tab-report"    class="px-4 py-2.5 text-sm font-medium tab-off">📋 Report</button>
-  <button onclick="setTab('landscape')" id="tab-landscape" class="px-4 py-2.5 text-sm font-medium tab-off">🗺 Landscape</button>
-  <button onclick="setTab('history')"   id="tab-history"   class="px-4 py-2.5 text-sm font-medium tab-off">📅 History</button>
+  <button onclick="setTab('dashboard')" id="tab-dashboard" class="px-4 py-2.5 text-sm font-medium tab-on">Dashboard</button>
+  <button onclick="setTab('report')"    id="tab-report"    class="px-4 py-2.5 text-sm font-medium tab-off">Report</button>
+  <button onclick="setTab('landscape')" id="tab-landscape" class="px-4 py-2.5 text-sm font-medium tab-off">Landscape</button>
+  <button onclick="setTab('history')"   id="tab-history"   class="px-4 py-2.5 text-sm font-medium tab-off">History</button>
 </div>
 
 <div class="flex-1 overflow-y-auto" id="content">
   <div class="flex items-center justify-center h-full text-slate-400">
-    <div class="text-center"><div class="text-5xl mb-3">⏳</div><p>Loading...</p></div>
+    <div class="text-center"><div class="text-5xl mb-3">&#9203;</div><p>Loading...</p></div>
   </div>
 </div>
 
 <script>
-var S = { reports:[], settings:{}, tab:"dashboard", selReport:null, selComp:null, seg:"B2B" };
+var S = { reports:[], settings:{}, tab:"dashboard", selReport:null, selIdx:-1, seg:"B2B" };
+
+function clean(t) {
+  if (!t) return "";
+  return String(t).replace(/<cite[^>]*>/g,"").replace(/<\/cite>/g,"").replace(/&quot;/g,'"').trim();
+}
+
+function badge(l) {
+  var m = {Critical:"badge-Critical",High:"badge-High",Medium:"badge-Medium",Low:"badge-Low"};
+  return '<span class="text-xs px-2 py-0.5 rounded-full font-semibold '+(m[l]||m.Low)+'">'+l+'</span>';
+}
+
+function fmt(d) { return new Date(d).toLocaleDateString(); }
+function fmtFull(d) { return new Date(d).toLocaleString(); }
+
+function getComps() {
+  if (!S.selReport || !S.selReport.competitor_data) return [];
+  return S.selReport.competitor_data;
+}
 
 async function init() {
   try {
     var r = await fetch("data.json?t="+Date.now());
     var d = await r.json();
-    S.reports = d.reports || [];
-    S.settings = d.settings || {};
+    S.reports = d.reports||[];
+    S.settings = d.settings||{};
     if (S.reports.length) S.selReport = S.reports[0];
     if (S.settings.lastRun) {
       var el = document.getElementById("last-run");
-      var days = Math.max(0, Math.ceil((new Date(S.settings.lastRun).getTime()+7*86400000-Date.now())/86400000));
-      el.textContent = "Last run "+new Date(S.settings.lastRun).toLocaleDateString()+" · Next in "+days+"d";
+      var days = Math.max(0,Math.ceil((new Date(S.settings.lastRun).getTime()+7*86400000-Date.now())/86400000));
+      el.textContent = "Last run "+fmt(S.settings.lastRun)+" - Next in "+days+"d";
       el.classList.remove("hidden");
     }
   } catch(e) { console.error(e); }
   render();
-}
-
-function badge(l) {
-  var s = {Critical:"badge-Critical",High:"badge-High",Medium:"badge-Medium",Low:"badge-Low"};
-  return '<span class="text-xs px-2 py-0.5 rounded-full font-semibold '+(s[l]||s.Low)+'">'+l+'</span>';
-}
-function fmt(d) { return new Date(d).toLocaleDateString(); }
-function fmtFull(d) { return new Date(d).toLocaleString(); }
-function daysNext() {
-  if (!S.settings.lastRun) return 0;
-  return Math.max(0, Math.ceil((new Date(S.settings.lastRun).getTime()+7*86400000-Date.now())/86400000));
-}
-function mdRender(text) {
-  if (!text) return "<p class='text-slate-400 text-sm'>No content.</p>";
-  return text.split("\n").map(function(line) {
-    if (line.startsWith("## "))  return '<h2 class="text-base font-bold text-slate-800 mt-4 mb-1 pt-3 border-t border-slate-100">'+line.slice(3)+'</h2>';
-    if (line.startsWith("### ")) return '<h3 class="text-sm font-semibold text-slate-700 mt-3 mb-1">'+line.slice(4)+'</h3>';
-    if (line.match(/^\d+\.\s/))  return '<p class="text-sm text-slate-700 ml-3 my-0.5">'+line+'</p>';
-    if (line.startsWith("- "))   return '<div class="flex gap-2 ml-3 my-0.5"><span class="text-blue-400 text-xs mt-1">&#9679;</span><span class="text-sm text-slate-700">'+line.slice(2)+'</span></div>';
-    if (!line.trim())             return '<div class="h-1"></div>';
-    return '<p class="text-sm text-slate-700 leading-relaxed my-0.5">'+line+'</p>';
-  }).join("");
 }
 
 function setTab(t) {
@@ -97,146 +93,167 @@ function setTab(t) {
   render();
 }
 
+function pickComp(idx) {
+  S.selIdx = idx;
+  S.seg = getComps()[idx] ? getComps()[idx].segment : S.seg;
+  setTab("landscape");
+}
+
+function setSeg(s) { S.seg = s; render(); }
+function pickReport(i) { S.selReport = S.reports[parseInt(i)]; S.selIdx = -1; render(); }
+function pickAndView(i) { S.selReport = S.reports[i]; setTab("report"); }
+
+function mdRender(text) {
+  if (!text) return "<p class='text-slate-400 text-sm'>No content.</p>";
+  return clean(text).split("\n").map(function(line) {
+    if (line.startsWith("## "))  return '<h2 class="text-base font-bold text-slate-800 mt-4 mb-1 pt-3 border-t border-slate-100">'+line.slice(3)+'</h2>';
+    if (line.startsWith("### ")) return '<h3 class="text-sm font-semibold text-slate-700 mt-3 mb-1">'+line.slice(4)+'</h3>';
+    if (line.match(/^\d+\.\s/))  return '<p class="text-sm text-slate-700 ml-3 my-0.5">'+line+'</p>';
+    if (line.startsWith("- "))   return '<div class="flex gap-2 ml-3 my-0.5"><span class="text-blue-400 text-xs">*</span><span class="text-sm text-slate-700">'+line.slice(2)+'</span></div>';
+    if (!line.trim())             return '<div class="h-1"></div>';
+    return '<p class="text-sm text-slate-700 leading-relaxed my-0.5">'+line+'</p>';
+  }).join("");
+}
+
+function compDetail(comp) {
+  if (!comp) return '<div class="flex items-center justify-center h-64 text-slate-400 text-sm">Select a competitor to see full analysis</div>';
+  var tColors = {Critical:"red",High:"orange",Medium:"yellow",Low:"green"};
+  var tc = tColors[comp.threatLevel]||"green";
+  var html = '<div class="bg-white rounded-xl border border-slate-200 p-5 shadow-sm">';
+  html += '<div class="flex justify-between items-start mb-4">';
+  html += '<div><h3 class="font-bold text-xl">'+clean(comp.competitor)+'</h3>';
+  html += '<div class="text-sm text-slate-400 mt-1">'+clean(comp.segment)+' - Researched '+fmt(comp.researchDate)+'</div></div>';
+  html += badge(comp.threatLevel)+'</div>';
+  if (comp.threatRationale) {
+    html += '<div class="bg-'+tc+'-50 border border-'+tc+'-100 rounded-lg px-4 py-3 mb-4">';
+    html += '<div class="text-xs font-bold text-'+tc+'-700 mb-1">Why '+comp.threatLevel+' Threat</div>';
+    html += '<div class="text-sm text-'+tc+'-800">'+clean(comp.threatRationale)+'</div></div>';
+  }
+  if (comp.strategicSignal) {
+    html += '<div class="bg-amber-50 border border-amber-100 rounded-lg px-4 py-3 mb-4">';
+    html += '<div class="text-xs font-bold text-amber-700 mb-1">KEY SIGNAL</div>';
+    html += '<div class="text-sm text-amber-800">'+clean(comp.strategicSignal)+'</div></div>';
+  }
+  if (comp.pricing) {
+    html += '<div class="mb-4"><div class="text-xs font-bold text-slate-500 uppercase mb-1">Pricing</div>';
+    html += '<div class="text-sm text-slate-700">'+clean(comp.pricing)+'</div></div>';
+  }
+  html += '<div class="grid grid-cols-2 gap-4 mb-4">';
+  html += '<div><div class="text-xs font-bold text-green-700 uppercase mb-2">Strengths</div><ul>';
+  (comp.strengths||[]).forEach(function(s){html+='<li class="text-sm flex gap-2 mb-1.5"><span class="text-green-400">+</span><span>'+clean(s)+'</span></li>';});
+  html += '</ul></div>';
+  html += '<div><div class="text-xs font-bold text-red-700 uppercase mb-2">Weaknesses</div><ul>';
+  (comp.weaknesses||[]).forEach(function(w){html+='<li class="text-sm flex gap-2 mb-1.5"><span class="text-red-400">-</span><span>'+clean(w)+'</span></li>';});
+  html += '</ul></div></div>';
+  if ((comp.recentDevelopments||[]).length) {
+    html += '<div class="mb-4"><div class="text-xs font-bold text-blue-700 uppercase mb-2">Recent Developments</div><ul>';
+    comp.recentDevelopments.forEach(function(d){html+='<li class="text-sm flex gap-2 mb-1.5"><span class="text-blue-400">*</span><span>'+clean(d)+'</span></li>';});
+    html += '</ul></div>';
+  }
+  if (comp.floAdvantage) {
+    html += '<div class="bg-blue-50 border border-blue-100 rounded-lg px-4 py-3">';
+    html += '<div class="text-xs font-bold text-blue-700 mb-1">FLO ADVANTAGE</div>';
+    html += '<div class="text-sm text-blue-800">'+clean(comp.floAdvantage)+'</div></div>';
+  }
+  html += '</div>';
+  return html;
+}
+
 function render() {
   var c = document.getElementById("content");
-  var latest = S.reports[0];
-  var allComps = (latest && latest.competitor_data) ? latest.competitor_data : [];
+  var allComps = getComps();
   var b2b = allComps.filter(function(x){return x.segment==="B2B";});
   var b2c = allComps.filter(function(x){return x.segment==="B2C";});
   var highs = allComps.filter(function(x){return x.threatLevel==="Critical"||x.threatLevel==="High";});
   var newOnes = allComps.filter(function(x){return x.isNewEntrant;});
 
-  if (S.tab === "dashboard") {
-    var cards = [
-      {l:"Tracked",     v:allComps.length||"—", s:b2b.length+" B2B · "+b2c.length+" B2C",                                  col:"blue"},
-      {l:"Reports",     v:S.reports.length,       s:S.reports.length?"Last "+fmt(S.reports[0].generated_at):"None yet",     col:"purple"},
-      {l:"High Threats",v:highs.length,            s:highs.map(function(x){return x.competitor;}).slice(0,2).join(", ")||"Run to detect", col:"red"},
-      {l:"New Entrants",v:newOnes.length,          s:newOnes.length?"Auto-discovered this run":"None this run",              col:"green"}
-    ];
+  if (S.tab==="dashboard") {
     var html = '<div class="p-5 space-y-4">';
     html += '<div class="grid grid-cols-2 sm:grid-cols-4 gap-3">';
-    cards.forEach(function(card) {
+    [{l:"Tracked",v:allComps.length||"--",s:b2b.length+" B2B - "+b2c.length+" B2C",col:"blue"},
+     {l:"Reports",v:S.reports.length,s:S.reports.length?"Last "+fmt(S.reports[0].generated_at):"None yet",col:"purple"},
+     {l:"High Threats",v:highs.length,s:highs.map(function(x){return clean(x.competitor);}).slice(0,2).join(", ")||"None yet",col:"red"},
+     {l:"New Entrants",v:newOnes.length,s:newOnes.length?"Discovered this run":"None this run",col:"green"}
+    ].forEach(function(card) {
       html += '<div class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm"><div class="text-3xl font-bold text-'+card.col+'-600">'+card.v+'</div><div class="text-xs font-semibold text-slate-700 mt-1">'+card.l+'</div><div class="text-xs text-slate-400 mt-0.5 truncate">'+card.s+'</div></div>';
     });
     html += '</div>';
     html += '<div class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm">';
     html += '<div class="font-semibold text-sm mb-1">Trigger a Manual Run</div>';
-    html += '<p class="text-xs text-slate-500 mb-3">GitHub Actions page → Run workflow → choose scope → Run. Agent also auto-runs every Monday 9am UTC.</p>';
-    html += '<a href="https://github.com/SyedShahid-FBIN/flo-ci-agent/actions/workflows/research.yml" target="_blank" class="inline-block bg-slate-800 hover:bg-slate-900 text-white px-4 py-2 rounded-lg text-sm font-medium">Open GitHub Actions ↗</a>';
-    if (newOnes.length) {
-      html += '<div class="mt-3 bg-purple-50 border border-purple-100 rounded-lg px-3 py-2"><div class="text-xs font-bold text-purple-700 mb-1">&#128221; '+newOnes.length+' New Competitor(s) Discovered</div><div class="text-xs text-purple-600">'+newOnes.map(function(c){return c.competitor;}).join(", ")+'</div></div>';
-    }
+    html += '<p class="text-xs text-slate-500 mb-3">Open GitHub Actions - Run workflow - choose scope. Agent also auto-runs every Monday 9am UTC.</p>';
+    html += '<a href="https://github.com/SyedShahid-FBIN/flo-ci-agent/actions/workflows/research.yml" target="_blank" class="inline-block bg-slate-800 text-white px-4 py-2 rounded-lg text-sm font-medium">Open GitHub Actions</a>';
     html += '</div>';
     if (allComps.length) {
       html += '<div class="grid grid-cols-2 gap-4">';
       ["B2B","B2C"].forEach(function(seg) {
-        var segComps = seg==="B2B" ? b2b : b2c;
+        var sc = allComps.filter(function(x){return x.segment===seg;});
         html += '<div class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm">';
-        html += '<div class="font-semibold text-sm mb-3">'+(seg==="B2B"?"&#127970; B2B":"&#127968; B2C")+'</div>';
-        segComps.forEach(function(comp) {
-          html += '<div class="flex items-center justify-between py-2 border-b border-slate-50 last:border-0 cursor-pointer hover:bg-slate-50 rounded px-1" onclick="pickComp(\''+encodeURIComponent(JSON.stringify(comp))+'\')">';
-          html += '<div class="flex items-center gap-1.5"><span class="text-sm font-medium">'+comp.competitor+'</span>';
-          if (comp.isNewEntrant) html += '<span class="text-xs bg-purple-100 text-purple-700 px-1.5 rounded font-semibold">NEW</span>';
-          html += '</div>'+badge(comp.threatLevel)+'</div>';
+        html += '<div class="font-semibold text-sm mb-3">'+seg+'</div>';
+        sc.forEach(function(comp) {
+          var idx = allComps.indexOf(comp);
+          html += '<div class="flex items-center justify-between py-2 border-b border-slate-50 last:border-0 cursor-pointer hover:bg-blue-50 rounded px-1" onclick="pickComp('+idx+')">';
+          html += '<span class="text-sm font-medium">'+clean(comp.competitor)+'</span>'+badge(comp.threatLevel)+'</div>';
         });
         html += '</div>';
       });
       html += '</div>';
     } else {
-      html += '<div class="bg-blue-50 border border-blue-100 rounded-xl p-8 text-center"><div class="text-5xl mb-3">&#129302;</div><div class="font-bold text-blue-800 text-lg mb-1">Agent Ready</div><div class="text-sm text-blue-600">No runs yet. Trigger the first run from GitHub Actions.</div></div>';
+      html += '<div class="bg-blue-50 border border-blue-100 rounded-xl p-8 text-center"><div class="text-5xl mb-3">robot</div><div class="font-bold text-blue-800 text-lg mb-1">Agent Ready</div><div class="text-sm text-blue-600">No runs yet. Trigger the first run from GitHub Actions.</div></div>';
     }
     html += '</div>';
     c.innerHTML = html;
   }
 
-  else if (S.tab === "report") {
-    if (!S.selReport) {
-      c.innerHTML = '<div class="flex flex-col items-center justify-center h-64 text-slate-400 text-center"><div class="text-4xl mb-3">&#128203;</div><p>No reports yet.</p></div>';
-      return;
-    }
+  else if (S.tab==="report") {
+    if (!S.selReport) { c.innerHTML='<div class="flex items-center justify-center h-64 text-slate-400">No reports yet.</div>'; return; }
     var html = '<div class="p-5">';
     html += '<div class="flex items-center justify-between mb-4">';
     html += '<div><h2 class="font-bold text-lg">Weekly Competitive Intelligence Report</h2>';
-    html += '<div class="text-sm text-slate-400">Generated '+fmtFull(S.selReport.generated_at)+' &middot; '+((S.selReport.competitor_data||[]).length)+' competitors &middot; '+S.selReport.scope+'</div></div>';
-    if (S.reports.length > 1) {
+    html += '<div class="text-sm text-slate-400">Generated '+fmtFull(S.selReport.generated_at)+' - '+((S.selReport.competitor_data||[]).length)+' competitors - '+S.selReport.scope+'</div></div>';
+    if (S.reports.length>1) {
       html += '<select onchange="pickReport(this.value)" class="border border-slate-200 rounded-lg px-3 py-1.5 text-sm">';
-      S.reports.forEach(function(r,i) {
-        html += '<option value="'+i+'" '+(S.selReport===r?"selected":"")+'>'+(i===0?"Latest &mdash; ":"")+fmt(r.generated_at)+'</option>';
-      });
+      S.reports.forEach(function(r,i){html+='<option value="'+i+'" '+(S.selReport===r?"selected":"")+'>'+(i===0?"Latest - ":"")+fmt(r.generated_at)+'</option>';});
       html += '</select>';
     }
-    html += '</div>';
-    html += '<div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">'+mdRender(S.selReport.executive_report)+'</div>';
-    html += '</div>';
+    html += '</div><div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">'+mdRender(S.selReport.executive_report)+'</div></div>';
     c.innerHTML = html;
   }
 
-  else if (S.tab === "landscape") {
-    if (!allComps.length) {
-      c.innerHTML = '<div class="flex flex-col items-center justify-center h-64 text-slate-400 text-center"><div class="text-4xl mb-3">&#128506;</div><p>Run the agent to populate.</p></div>';
-      return;
-    }
+  else if (S.tab==="landscape") {
+    if (!allComps.length) { c.innerHTML='<div class="flex items-center justify-center h-64 text-slate-400">Run the agent to populate.</div>'; return; }
     var segData = allComps.filter(function(x){return x.segment===S.seg;});
-    var html = '<div class="p-5"><div class="grid grid-cols-3 gap-4"><div class="col-span-1">';
-    html += '<div class="flex gap-2 mb-3">';
-    ["B2B","B2C"].forEach(function(s) {
-      html += '<button onclick="setSeg(\''+s+'\')" class="px-4 py-1.5 rounded-full text-sm font-medium transition-colors '+(S.seg===s?"bg-blue-600 text-white":"bg-white border border-slate-200 text-slate-600")+'">'+s+'</button>';
+    var selComp = S.selIdx>=0 ? allComps[S.selIdx] : null;
+    var html = '<div class="p-5"><div class="grid grid-cols-3 gap-4">';
+    html += '<div class="col-span-1"><div class="flex gap-2 mb-3">';
+    ["B2B","B2C"].forEach(function(s){
+      html += '<button onclick="setSeg(\''+s+'\')" class="px-4 py-1.5 rounded-full text-sm font-medium '+(S.seg===s?"bg-blue-600 text-white":"bg-white border border-slate-200 text-slate-600")+'">'+s+'</button>';
     });
     html += '</div>';
     segData.forEach(function(comp) {
-      var active = S.selComp && S.selComp.competitor===comp.competitor;
-      html += '<div onclick="pickComp(\''+encodeURIComponent(JSON.stringify(comp))+'\')" class="flex items-center justify-between px-3 py-2.5 rounded-lg cursor-pointer transition-colors mb-1 '+(active?"bg-blue-600 text-white":"bg-white hover:bg-slate-100 border border-slate-200")+'">';
-      html += '<div class="flex items-center gap-1.5"><span class="text-sm font-medium">'+comp.competitor+'</span>';
-      if (comp.isNewEntrant) html += '<span class="text-xs '+(active?"bg-white/20 text-white":"bg-purple-100 text-purple-700")+' px-1 rounded font-semibold">NEW</span>';
-      html += '</div>';
+      var idx = allComps.indexOf(comp);
+      var active = idx===S.selIdx;
+      html += '<div onclick="pickComp('+idx+')" class="flex items-center justify-between px-3 py-2.5 rounded-lg cursor-pointer mb-1 '+(active?"bg-blue-600 text-white":"bg-white hover:bg-slate-100 border border-slate-200")+'">';
+      html += '<span class="text-sm font-medium">'+clean(comp.competitor)+'</span>';
       html += '<span class="text-xs px-1.5 py-0.5 rounded font-semibold '+(active?"bg-white/20 text-white":comp.threatLevel==="Critical"?"bg-red-100 text-red-700":comp.threatLevel==="High"?"bg-orange-100 text-orange-700":comp.threatLevel==="Medium"?"bg-yellow-100 text-yellow-700":"bg-green-100 text-green-700")+'">'+comp.threatLevel+'</span>';
       html += '</div>';
     });
-    html += '</div><div class="col-span-2">';
-    if (S.selComp) {
-      html += '<div class="bg-white rounded-xl border border-slate-200 p-5 shadow-sm space-y-4">';
-      html += '<div class="flex justify-between items-start"><div><h3 class="font-bold text-lg">'+S.selComp.competitor+'</h3>';
-      if (S.selComp.isNewEntrant) html += '<span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded-full font-semibold">&#128221; Newly Discovered</span>';
-      html += '<div class="text-sm text-slate-400 mt-1">'+S.selComp.segment+' &middot; '+fmt(S.selComp.researchDate)+'</div></div>'+badge(S.selComp.threatLevel)+'</div>';
-      if (S.selComp.strategicSignal) html += '<div class="bg-amber-50 border border-amber-100 rounded-lg px-4 py-3"><div class="text-xs font-bold text-amber-700 mb-1">&#9889; KEY SIGNAL</div><div class="text-sm text-amber-800">'+S.selComp.strategicSignal+'</div></div>';
-      if (S.selComp.pricing) html += '<div><div class="text-xs font-bold text-slate-500 uppercase mb-1">Pricing</div><div class="text-sm text-slate-700">'+S.selComp.pricing+'</div></div>';
-      html += '<div class="grid grid-cols-2 gap-4">';
-      html += '<div><div class="text-xs font-bold text-green-700 uppercase mb-2">&#9989; Strengths</div><ul>';
-      (S.selComp.strengths||[]).forEach(function(s){html+='<li class="text-sm flex gap-2 mb-1"><span class="text-green-400 text-xs">&#9679;</span>'+s+'</li>';});
-      html += '</ul></div>';
-      html += '<div><div class="text-xs font-bold text-red-700 uppercase mb-2">&#128308; Weaknesses</div><ul>';
-      (S.selComp.weaknesses||[]).forEach(function(w){html+='<li class="text-sm flex gap-2 mb-1"><span class="text-red-400 text-xs">&#9679;</span>'+w+'</li>';});
-      html += '</ul></div></div>';
-      if ((S.selComp.recentDevelopments||[]).length) {
-        html += '<div><div class="text-xs font-bold text-blue-700 uppercase mb-2">&#128240; Recent Developments</div><ul>';
-        S.selComp.recentDevelopments.forEach(function(d){html+='<li class="text-sm flex gap-2 mb-1"><span class="text-blue-400 text-xs">&#9679;</span>'+d+'</li>';});
-        html += '</ul></div>';
-      }
-      if (S.selComp.floAdvantage) html += '<div class="bg-blue-50 border border-blue-100 rounded-lg px-4 py-3"><div class="text-xs font-bold text-blue-700 mb-1">&#127919; FLO ADVANTAGE</div><div class="text-sm text-blue-800">'+S.selComp.floAdvantage+'</div></div>';
-      if (S.selComp.threatRationale) html += '<div class="text-xs text-slate-400 italic">'+S.selComp.threatRationale+'</div>';
-      html += '</div>';
-    } else {
-      html += '<div class="flex items-center justify-center h-full text-slate-400 text-sm">&#8592; Select a competitor</div>';
-    }
-    html += '</div></div></div></div>';
+    html += '</div><div class="col-span-2">'+compDetail(selComp)+'</div></div></div>';
     c.innerHTML = html;
   }
 
-  else if (S.tab === "history") {
+  else if (S.tab==="history") {
     var html = '<div class="p-5"><h2 class="font-bold text-lg mb-4">Report History</h2>';
-    if (!S.reports.length) {
-      html += '<div class="text-slate-400 text-center py-16">No reports yet.</div>';
-    } else {
+    if (!S.reports.length) { html += '<div class="text-slate-400 text-center py-16">No reports yet.</div>'; }
+    else {
       html += '<div class="space-y-3">';
-      S.reports.forEach(function(r,i) {
+      S.reports.forEach(function(r,i){
         var comps = r.competitor_data||[];
-        var news = comps.filter(function(x){return x.isNewEntrant;});
-        html += '<div onclick="pickAndView('+i+')" class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm cursor-pointer hover:border-blue-300 transition-colors">';
-        html += '<div class="flex items-center justify-between">';
-        html += '<div><span class="font-semibold text-sm">'+(i===0?"&#10024; Latest &mdash; ":"")+fmtFull(r.generated_at)+'</span>';
-        html += '<div class="text-xs text-slate-400 mt-0.5">'+comps.length+' competitors &middot; '+r.scope+(news.length?' &middot; <span class="text-purple-600 font-medium">'+news.length+' new entrant(s)</span>':'')+'</div></div>';
-        if (r.errors&&r.errors.length) html += '<span class="text-xs text-red-400">&#9888; '+r.errors.length+' error(s)</span>';
-        html += '</div></div>';
+        var hs = comps.filter(function(x){return x.threatLevel==="Critical"||x.threatLevel==="High";});
+        html += '<div onclick="pickAndView('+i+')" class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm cursor-pointer hover:border-blue-300">';
+        html += '<div class="font-semibold text-sm">'+(i===0?"Latest - ":"")+fmtFull(r.generated_at)+'</div>';
+        html += '<div class="text-xs text-slate-400 mt-0.5">'+comps.length+' competitors - '+r.scope+(hs.length?' - '+hs.length+' high threat(s)':'')+'</div>';
+        if (r.errors&&r.errors.length) html += '<div class="text-xs text-red-400 mt-1">'+r.errors.length+' error(s)</div>';
+        html += '</div>';
       });
       html += '</div>';
     }
@@ -244,11 +261,6 @@ function render() {
     c.innerHTML = html;
   }
 }
-
-function pickComp(encoded) { S.selComp = JSON.parse(decodeURIComponent(encoded)); setTab("landscape"); }
-function setSeg(s) { S.seg = s; render(); }
-function pickReport(i) { S.selReport = S.reports[parseInt(i)]; render(); }
-function pickAndView(i) { S.selReport = S.reports[i]; setTab("report"); }
 
 init();
 </script>
