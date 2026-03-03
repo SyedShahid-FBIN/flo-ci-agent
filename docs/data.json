@@ -1,6 +1,100 @@
 {
   "reports": [
     {
+      "id": 4,
+      "generated_at": "2026-03-03T19:00:00.508+00:00",
+      "scope": "full",
+      "competitor_data": [
+        {
+          "pricing": "<cite index=\"12-9\">Millennial renters willing to pay 20% more for apartments with smart home features</cite>; exact pricing not disclosed but positioned as premium service with ROI focus",
+          "segment": "B2B",
+          "strengths": [
+            "<cite index=\"2-3,25-18,26-11\">End-to-end ecosystem serving 15 of top 20 multifamily operators with millions of users</cite>",
+            "<cite index=\"24-1,24-15\">Connects millions of devices across locks, thermostats, sensors and workflows for real-time operational control</cite>",
+            "<cite index=\"7-1,24-7,24-8,24-11\">AI-powered SMRT IQ platform enabling conversational analytics and instant property insights</cite>",
+            "<cite index=\"26-5,26-17\">Growing Annual Recurring Revenue (7% increase to $56.9M) with 870,000+ deployed units (11% growth)</cite>",
+            "<cite index=\"2-10,2-11,2-12\">Water leak detection with early alerts saving thousands on repairs</cite>",
+            "<cite index=\"5-18\">Self-guided tours boosting weekly tours by 60% for some properties</cite>"
+          ],
+          "competitor": "SmartRent",
+          "weaknesses": [
+            "<cite index=\"26-4,26-6\">Revenue declining 11% in Q3 2025 to $36.2M with net losses continuing</cite>",
+            "<cite index=\"25-8,25-9\">Q1 2025 goodwill impairment of $24.9M indicating asset valuation challenges</cite>",
+            "<cite index=\"30-24,30-25\">Acknowledged lack of success in channel partner program requiring sales organization restructuring</cite>",
+            "<cite index=\"26-19\">Required $30M annualized cost reduction program indicating operational inefficiencies</cite>",
+            "Limited specific water management focus compared to dedicated water leak prevention solutions"
+          ],
+          "threatLevel": "Medium",
+          "floAdvantage": "FLO's dedicated water shutoff technology ($500 Flo by Moen) and specialized water monitoring provides more focused water damage prevention than SmartRent's broader but less specialized smart home platform",
+          "researchDate": "2026-03-03",
+          "strategicSignal": "<cite index=\"24-1,24-15,7-1,24-8\">SmartRent's AI-powered SMRT IQ platform for real-time analytics represents the future of property technology - FLO should accelerate AI integration in water management analytics</cite>",
+          "threatRationale": "<cite index=\"1-2,2-3\">Strong market position with comprehensive automation suite but financial struggles and broader focus limit direct water management competition</cite>",
+          "recentDevelopments": [
+            "<cite index=\"3-3,3-7\">Participated in 2026 CONNECTIONS Summit at CES highlighting smart technologies reshaping multifamily communities (January 2026)</cite>",
+            "<cite index=\"24-7,24-8,24-11,7-1,7-7\">Launched SMRT IQ AI-powered intelligence platform allowing natural language queries for real-time device and operational insights</cite>",
+            "<cite index=\"24-24,29-10\">Expanded platform with enhanced energy management and HVAC optimization tools</cite>",
+            "<cite index=\"7-12,7-17\">Appointed Frank Martell as President and CEO, bringing 30+ years executive experience from loanDepot and CoreLogic</cite>",
+            "<cite index=\"7-17,7-18\">Added Pankaj Bansi as Chief Transformation Officer to drive enterprise transformation and scalable processes</cite>"
+          ]
+        }
+      ],
+      "executive_report": "",
+      "errors": [
+        {
+          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgfJgDJmrqmqMcdGMP9M\"}",
+          "competitor": "Quext IoT"
+        },
+        {
+          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgfJnkCtvkwqt6cAJpQt\"}",
+          "competitor": "Yardi Utility Management"
+        },
+        {
+          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgfJv6EXT1WFG5La4BCE\"}",
+          "competitor": "RealPage Utility Management"
+        },
+        {
+          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgfK3QGX1EMcLtSHoyPp\"}",
+          "competitor": "Conservice"
+        },
+        {
+          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgfK9aLgHMWUPnK4vgiU\"}",
+          "competitor": "Livable"
+        },
+        {
+          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgfKGnvmyjRpqgSznZkS\"}",
+          "competitor": "Ratio Utilities"
+        },
+        {
+          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgfKPYE7BCm89LiNjtP2\"}",
+          "competitor": "Phyn Plus"
+        },
+        {
+          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgfKX6eWHq7bSsMExiNZ\"}",
+          "competitor": "Grohe Sense Guard"
+        },
+        {
+          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgfKdYbguuJfTEUyF1iY\"}",
+          "competitor": "Resideo Leak Defense"
+        },
+        {
+          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgfKkWnygUX7aqCBtMtZ\"}",
+          "competitor": "Leak Smart"
+        },
+        {
+          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgfKrg8PsyzEAjSmdvV7\"}",
+          "competitor": "Govee Water Sensor"
+        },
+        {
+          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgfKywgjiWxsTHgdUA8d\"}",
+          "competitor": "Alert Labs"
+        },
+        {
+          "step": "report_synthesis",
+          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgfL6Sc7ccxjydkGu3u3\"}"
+        }
+      ]
+    },
+    {
       "id": 3,
       "generated_at": "2026-03-02T21:16:04.344+00:00",
       "scope": "full",
@@ -197,8 +291,8 @@
     }
   ],
   "settings": {
-    "lastRun": "2026-03-02T21:16:04.344+00:00",
+    "lastRun": "2026-03-03T19:00:00.508+00:00",
     "scope": "full"
   },
-  "builtAt": "2026-03-02T21:16:05.452Z"
+  "builtAt": "2026-03-03T19:00:02.460Z"
 }
