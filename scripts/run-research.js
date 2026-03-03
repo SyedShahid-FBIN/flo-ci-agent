@@ -116,8 +116,8 @@ async function main() {
       errors.push({ competitor: comp.name, error: e.message });
     }
     if (i < toResearch.length - 1) {
-      console.log("Waiting 15s...");
-      await new Promise(function(resolve) { setTimeout(resolve, 15000); });
+      console.log("Waiting 60s...");
+      await new Promise(function(resolve) { setTimeout(resolve, 60000); });
     }
   }
 
