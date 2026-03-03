@@ -115,6 +115,10 @@ async function main() {
       console.error("  Failed: " + e.message);
       errors.push({ competitor: comp.name, error: e.message });
     }
+    if (i < toResearch.length - 1) {
+      console.log("Waiting 15s...");
+      await new Promise(function(resolve) { setTimeout(resolve, 15000); });
+    }
   }
 
   var executiveReport = "";
