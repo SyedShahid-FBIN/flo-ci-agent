@@ -1,6 +1,71 @@
 {
   "reports": [
     {
+      "id": 10,
+      "generated_at": "2026-03-03T19:38:20.886+00:00",
+      "scope": "full",
+      "competitor_data": [],
+      "executive_report": "",
+      "errors": [
+        {
+          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgiE2D3Sy9RFNHga9Mw7\"}",
+          "competitor": "SmartRent"
+        },
+        {
+          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgiE9fG4htZ3BNvQDFN3\"}",
+          "competitor": "Quext IoT"
+        },
+        {
+          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgiEHjw7j5P9DnLFcjuv\"}",
+          "competitor": "Yardi Utility Management"
+        },
+        {
+          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgiERCA1yyjxypNbfkgt\"}",
+          "competitor": "RealPage Utility Management"
+        },
+        {
+          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgiEXUBXt9cQ2VPA1rvS\"}",
+          "competitor": "Conservice"
+        },
+        {
+          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgiEfBmtxEa28xzojdTC\"}",
+          "competitor": "Livable"
+        },
+        {
+          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgiEnEwAK9DDvu1Po5s9\"}",
+          "competitor": "Ratio Utilities"
+        },
+        {
+          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgiEuS2iYPmGBzq49ynx\"}",
+          "competitor": "Phyn Plus"
+        },
+        {
+          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgiF3xjkU5WZ3PmKYFnX\"}",
+          "competitor": "Grohe Sense Guard"
+        },
+        {
+          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgiFAho8ZeKrsSsgCp9W\"}",
+          "competitor": "Resideo Leak Defense"
+        },
+        {
+          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgiFH9kCchcWJpUXhf7L\"}",
+          "competitor": "Leak Smart"
+        },
+        {
+          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgiFQYjxurwmfgFKUQJi\"}",
+          "competitor": "Govee Water Sensor"
+        },
+        {
+          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgiFYkbmxpuuWZFsHjxK\"}",
+          "competitor": "Alert Labs"
+        },
+        {
+          "step": "report_synthesis",
+          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgiFfYtQM3PFkudcHzpA\"}"
+        }
+      ]
+    },
+    {
       "id": 9,
       "generated_at": "2026-03-03T19:32:02.25+00:00",
       "scope": "full",
@@ -743,8 +808,8 @@
     }
   ],
   "settings": {
-    "lastRun": "2026-03-03T19:32:02.25+00:00",
+    "lastRun": "2026-03-03T19:38:20.886+00:00",
     "scope": "full"
   },
-  "builtAt": "2026-03-03T19:32:03.015Z"
+  "builtAt": "2026-03-03T19:38:21.573Z"
 }
