@@ -1,6 +1,1075 @@
 {
   "reports": [
     {
+      "id": 14,
+      "generated_at": "2026-03-09T20:55:53.993+00:00",
+      "scope": "full",
+      "competitor_data": [
+        {
+          "pricing": "$499 device + $500-800 professional installation = ~$999-1,299 total vs FLO's $500 all-in",
+          "segment": "B2C",
+          "strengths": [
+            "Superior ultrasonic flow sensor technology with no moving parts (vs competitors' turbine sensors)",
+            "Patented HD pressure wave analysis measuring 240x/second for highest accuracy",
+            "No monthly subscription fees (vs FLO's $5-15/mo plans)",
+            "Rated #1 most accurate in Utah State University independent study vs FLO, Buoy, StreamLabs",
+            "Extensive insurance partnerships (15+ carriers offer discounts/rebates)",
+            "Single device monitors entire home from main line",
+            "Advanced freeze detection capabilities"
+          ],
+          "competitor": "Phyn Plus",
+          "weaknesses": [
+            "Higher upfront cost ($999+ vs FLO's $500 total)",
+            "Requires professional installation by plumber (increases cost/complexity)",
+            "Long learning period with frequent false alarms first 1-3 weeks",
+            "No electrical extension option (requires outlet within 15 feet)",
+            "Newer to market with smaller installed base than FLO"
+          ],
+          "threatLevel": "High",
+          "floAdvantage": "Lower total cost of ownership and simpler DIY installation vs Phyn's premium professional install model",
+          "isNewEntrant": true,
+          "researchDate": "2026-03-09",
+          "strategicSignal": "Phyn's new ownership brings significant celebrity marketing power and financial resources to accelerate growth in the exact same B2C smart water shutoff market as FLO",
+          "threatRationale": "Direct premium competitor with superior technology backing, celebrity endorsement, and strong insurance partnerships threatening FLO's market position",
+          "recentDevelopments": [
+            "Acquired by investment group led by Property Brothers' Jonathan Scott for nearly $25M (May 2025)",
+            "Transitioned from Belkin ownership to independent company with high-profile investors",
+            "Recent partnerships with Nationwide Insurance, Amica, and Selective Insurance for leak detection programs",
+            "Second-generation Phyn Plus launched at $499, 25% smaller and more affordable than original",
+            "Partnership with Iplex Australia for Western Australian leak detector program"
+          ]
+        },
+        {
+          "pricing": "Monitor: $389 with free core app features; Control: $1000+; Scout sensors in 1, 3, or 5 packs; No ongoing subscription fees unlike competitors",
+          "segment": "B2C",
+          "strengths": [
+            "No subscription fees for core leak detection features",
+            "5-minute DIY installation with no pipe cutting required",
+            "Patented ultrasonic technology for accurate flow sensing",
+            "Backed by Chubb insurance with homeowner insurance discounts",
+            "Works with Alexa and Google Assistant",
+            "24/7 whole-home monitoring",
+            "Strong customer reviews with many 5+ year success stories"
+          ],
+          "competitor": "StreamLabs",
+          "weaknesses": [
+            "Monitor-only version lacks automatic shutoff capability",
+            "Higher price point than some competitors",
+            "Control version requires pipe cutting installation",
+            "Limited to US and Canada markets only",
+            "Some customer complaints about lacking remote shutoff in Monitor",
+            "App could be more feature-rich according to user feedback"
+          ],
+          "threatLevel": "High",
+          "floAdvantage": "FLO's automatic shutoff at ~$500 price point vs StreamLabs Monitor at $389 without shutoff or Control at $1000+ with shutoff",
+          "isNewEntrant": true,
+          "researchDate": "2026-03-09",
+          "strategicSignal": "StreamLabs' two-tier approach (Monitor vs Control) and insurance partnership model demonstrates successful market segmentation and validation channels that FLO should monitor closely.",
+          "threatRationale": "Strong market presence with insurance backing, established retail distribution, and proven customer satisfaction creates significant competitive pressure.",
+          "recentDevelopments": [
+            "Launched Scout water sensor product in January 2024 for point-of-leak detection",
+            "Offers both Monitor ($389) and Control ($1000+) product lines",
+            "Owned by Chubb insurance company, providing insurance discounts",
+            "Available at major retailers like Amazon, Lowe's, and Home Depot",
+            "Expanded into whole-home leak detection with Scout sensors"
+          ]
+        },
+        {
+          "pricing": "Flume 2 device $269 retail, discounted to $24-64 through utility partnerships, optional Flume Insight subscription $149/year for advanced features",
+          "segment": "B2C",
+          "strengths": [
+            "Non-invasive installation - straps to existing water meter in 10 minutes",
+            "95% home compatibility with existing water meters",
+            "Strong utility partnerships providing deep discounts to consumers",
+            "Insurance company partnerships (Amica, Mercury, HSB) for premium discounts",
+            "Real-time minute-by-minute water usage tracking with appliance-level breakdown",
+            "Recently added YoLink shutoff valve integration capability",
+            "$6.4M revenue in 2024 with growing market presence"
+          ],
+          "competitor": "Flume Water",
+          "weaknesses": [
+            "Core device cannot shut off water - requires separate third-party shutoff valve purchase",
+            "Complex setup for automatic shutoff requires IFTTT or technical integration knowledge",
+            "Limited to monitoring only without native shutoff capability",
+            "Subscription model required for advanced features ($149/year)",
+            "Less comprehensive than all-in-one solutions like FLO's integrated approach"
+          ],
+          "threatLevel": "Medium",
+          "floAdvantage": "FLO's integrated shutoff valve in single device vs Flume's monitoring-only approach requiring separate shutoff valve purchase and complex integration",
+          "isNewEntrant": true,
+          "researchDate": "2026-03-09",
+          "strategicSignal": "Flume's recent YoLink integration and insurance partnerships signal their push toward complete water protection ecosystem - FLO must emphasize integrated simplicity advantage",
+          "threatRationale": "Strong utility partnerships enable aggressive pricing but lacks integrated shutoff capability that FLO offers natively.",
+          "recentDevelopments": [
+            "Partnership with HSB insurance to offer flow-based water leak protection (March 2025)",
+            "Partnership with Amica Insurance for smart leak detection (August 2024)",
+            "Selected to conduct Water Research Foundation's Residential End Uses Study (June 2024)",
+            "YoLink shutoff valve integration launched allowing automatic water shutoff",
+            "Partnership with California Department of Water Resources for indoor water use study",
+            "New CEO Ric Miles leadership and James Frasche as Chief Revenue & Growth Officer"
+          ]
+        },
+        {
+          "pricing": "Starter kits around $99-300 range, individual valves and sensors sold separately, various size options (3/4\", 1\", 1-1/4\")",
+          "segment": "B2C",
+          "strengths": [
+            "No-cut DIY installation with snap-on valve controller",
+            "5-second automatic shutoff response time",
+            "Battery backup operation during power/WiFi outages",
+            "Wide smart home platform compatibility",
+            "Extensive sensor ecosystem with rope sensors up to 300 feet coverage",
+            "Both whole-home and appliance-level protection options",
+            "Professional and DIY installation flexibility"
+          ],
+          "competitor": "LeakSmart",
+          "weaknesses": [
+            "Professional installation recommended for main valves",
+            "Multiple product lines may confuse consumers",
+            "Relies on existing valve infrastructure",
+            "Limited flow monitoring capabilities compared to inline solutions",
+            "Older ZigBee protocol dependency for some products"
+          ],
+          "threatLevel": "Medium",
+          "floAdvantage": "FLO's integrated flow monitoring and advanced leak detection algorithms provide superior water usage insights and micro-leak detection that LeakSmart's primarily sensor-based approach cannot match",
+          "isNewEntrant": false,
+          "researchDate": "2026-03-09",
+          "strategicSignal": "The snap-on valve controller represents a significant innovation in DIY water protection that could accelerate market adoption by eliminating installation complexity",
+          "threatRationale": "LeakSmart's DIY snap-on approach addresses installation barriers that challenge FLO's more complex whole-home solutions.",
+          "recentDevelopments": [
+            "Snap-on valve controller technology requiring no tools or cutting pipes",
+            "Wi-Fi sensors with SensXtend system for extended reach up to 300 feet total",
+            "Integration with major smart home platforms including Nest, Wink, Google Assistant, and Amazon Alexa",
+            "Hub 3.0 with built-in Wi-Fi and self-charging battery backup",
+            "Automatic 22-day cleaning cycle to prevent mineral buildup"
+          ]
+        },
+        {
+          "pricing": "Starter Kit $199-299, Valve Controller $99, Leak Detectors $49 each, no monthly fees",
+          "segment": "B2C",
+          "strengths": [
+            "True DIY installation with no tools, plumbing, or pipe cutting required",
+            "Extremely low cost entry point ($199) compared to professional systems",
+            "15-year battery life on leak detectors with 1000ft wireless range",
+            "Works offline during internet outages, detects earthquakes and freezing temperatures",
+            "Multiple detection points (3 sensors per detector) with IP67 waterproof rating",
+            "Wide retail availability including major home improvement stores"
+          ],
+          "competitor": "Guardian by Elexa",
+          "weaknesses": [
+            "Only works with existing quarter-turn ball valves (1/2\" to 1-1/4\")",
+            "Customer reports of WiFi connectivity issues and disconnections",
+            "Limited to residential applications with basic app functionality",
+            "No professional monitoring or insurance integration beyond partnerships",
+            "Requires existing compatible valve infrastructure"
+          ],
+          "threatLevel": "High",
+          "floAdvantage": "FLO offers professional-grade installation, advanced analytics, insurance integration, and comprehensive B2B solutions that Guardian lacks",
+          "isNewEntrant": true,
+          "researchDate": "2026-03-09",
+          "strategicSignal": "Guardian proves strong consumer demand for affordable DIY water shutoff systems exists - FLO should consider developing a simplified, lower-cost DIY option to compete in this price-sensitive segment",
+          "threatRationale": "Guardian's sub-$200 price point and DIY installation directly targets cost-conscious homeowners who might otherwise consider FLO's $500 system.",
+          "recentDevelopments": [
+            "Launched Guardian Pro dealer program offering 3-year extended warranty, pro knowledge base, first access to new products, and API integrations",
+            "Expanded insurance partnerships with NsureHub and vipHomeLink offering discounts to Guardian customers",
+            "Achieved wide retail distribution through Lowes, Amazon, Best Buy, and specialty retailers"
+          ]
+        },
+        {
+          "pricing": "Significantly lower than FLO's ~$500 price point - positioned as 'affordable entry price' and 'accessible for most homeowners' with 'subscription-free' model and 10% first-order discount available",
+          "segment": "B2C",
+          "strengths": [
+            "True modular system architecture allowing scalable sensor deployment",
+            "DIY-friendly installation with detailed guides and adapters included",
+            "No subscription fees (major differentiator vs competitors)",
+            "Comprehensive product line: shutoff valves, point sensors, cable sensors, flow monitoring",
+            "Fast 12-second valve closure with 0.1 gal/min flow accuracy",
+            "IP66/IP67 protection ratings for indoor/outdoor use",
+            "Battery backup functionality during power outages",
+            "Supports both 2.4GHz and 5GHz WiFi plus Bluetooth connectivity",
+            "Insurance discount eligibility with automatic shutoff capability"
+          ],
+          "competitor": "Grus AquaNet",
+          "weaknesses": [
+            "Newer brand with limited market recognition compared to Moen Flo",
+            "Smart home integrations still in beta (Alexa/Google)",
+            "Requires AC power outlet within 10 feet of installation",
+            "Limited to 3/4 inch pipe compatibility (though adapters available)",
+            "Remote control unavailable during power outages (local function only)"
+          ],
+          "threatLevel": "High",
+          "floAdvantage": "FLO's established insurance partnerships, professional installation network, and machine learning analytics remain superior to Grus's newer market presence",
+          "isNewEntrant": true,
+          "researchDate": "2026-03-09",
+          "strategicSignal": "Grus represents the emerging 'affordable smart water protection' category that threatens FLO's premium positioning by offering comparable core functionality at substantially lower prices with no ongoing fees",
+          "threatRationale": "Grus directly targets FLO's core market with significantly lower pricing, modular scalability, and subscription-free model that could appeal to cost-conscious consumers.",
+          "recentDevelopments": [
+            "Launched modular AquaNet system with multiple smart devices (BD, VM, LD, M)",
+            "Added W-shaped ultrasonic technology for enhanced flow monitoring",
+            "Expanded to multiple leak detector models supporting up to 16 sensors per valve",
+            "Integrated with Alexa/Google Assistant (in beta testing)",
+            "Positioned as affordable alternative to premium competitors like Moen Flo"
+          ]
+        },
+        {
+          "pricing": "Premium pricing: $1,795-$2,995 (1\" to 2\" valves) vs FLO's ~$500. No subscription fees vs FLO's $5-15/mo plans. Higher upfront cost but 5-year warranty and insurance discounts offset long-term costs.",
+          "segment": "B2C",
+          "strengths": [
+            "Superior leak sensitivity (0.5 oz/min vs industry standard)",
+            "Flow-based detection catches ALL supply leaks anywhere in plumbing",
+            "Works offline without WiFi/internet dependency",
+            "Week-long battery backup vs FLO's 4-hour optional backup",
+            "Premium cast bronze construction vs plastic components",
+            "Full-port design maintains water pressure",
+            "Established insurance partnerships with major carriers",
+            "No subscription fees or ongoing costs"
+          ],
+          "competitor": "FloLogic",
+          "weaknesses": [
+            "3x higher upfront cost than FLO ($1,800-3,000 vs $500)",
+            "Requires professional plumber installation",
+            "Limited smart home integration compared to FLO",
+            "No AI learning algorithms like FLO's adaptive technology",
+            "Less user-friendly mobile app experience",
+            "Longer lead times (3-4 weeks) for fulfillment",
+            "WiFi module had supply issues historically"
+          ],
+          "threatLevel": "High",
+          "floAdvantage": "FLO's $500 price point, AI learning, superior app experience, DIY installation, and extensive smart home integrations create significant accessibility advantages over FloLogic's premium professional-install model.",
+          "isNewEntrant": true,
+          "researchDate": "2026-03-09",
+          "strategicSignal": "FloLogic represents the premium end of smart water shutoff technology that insurance companies and professionals prefer - FLO must decide whether to compete on features/reliability or maintain mass-market positioning through price and ease-of-use advantages.",
+          "threatRationale": "FloLogic's superior leak detection technology, insurance backing, and offline reliability expose FLO's technical limitations and dependency vulnerabilities.",
+          "recentDevelopments": [
+            "Acquired by Bradford White Corporation in July 2024 for strategic expansion",
+            "Introduced FloLogic PinPoint point-of-leak sensors in October 2025",
+            "Released new gateway-enabled Connect Module with Z-Wave capabilities",
+            "Partnered with major insurers (Chubb, PURE, State Farm, USAA) for premium discounts",
+            "Expanding through AHR Expo 2025 and InsureTech conference presence"
+          ]
+        },
+        {
+          "pricing": "Hardware pricing not disclosed publicly, requires contacting company directly. Service fees are $59.88/year for 3/4\" & 1\" units, $119.88/year for 1.5\" & 2\" units. Installation costs $50-350 depending on complexity.",
+          "segment": "B2C",
+          "strengths": [
+            "Significantly lower ongoing service fees compared to FLO's $5-15/month plans",
+            "Wide range of pipe sizes available including larger commercial sizes",
+            "Battery backup ensures protection during power outages",
+            "Temperature monitoring for freeze protection",
+            "Insurance discounts available to customers",
+            "30-day satisfaction guarantee with full refund",
+            "US-based customer support"
+          ],
+          "competitor": "Water Hero",
+          "weaknesses": [
+            "Requires professional plumbing installation with pipe cutting",
+            "Limited smart home integration compared to more established brands",
+            "Hardware pricing not transparent - requires direct contact",
+            "Relies on continuous flow detection which may miss some leak types",
+            "Smaller company with less brand recognition than Moen partnership",
+            "No subscription-free option - requires ongoing annual service fees"
+          ],
+          "threatLevel": "Medium",
+          "floAdvantage": "FLO by Moen has stronger brand recognition, more transparent pricing, broader smart home ecosystem integration, and established retail distribution channels",
+          "isNewEntrant": true,
+          "researchDate": "2026-03-09",
+          "strategicSignal": "Water Hero's annual service fee model ($60-120/year vs FLO's $60-180/year) combined with professional installation and battery backup creates a compelling value proposition that could pressure FLO's pricing strategy",
+          "threatRationale": "Water Hero's significantly lower service fees and comparable functionality pose a direct pricing threat to FLO's subscription model.",
+          "recentDevelopments": [
+            "Offers P-100 system with flow-based leak detection and automatic shutoff",
+            "Provides smartphone-controlled whole home water protection with iOS and web apps",
+            "Features battery backup for continuous operation during power outages",
+            "Includes temperature monitoring and freeze alerts to prevent pipe bursts",
+            "Offers multiple pipe sizes (3/4\", 1\", 1.5\", 2\") for different home configurations"
+          ]
+        },
+        {
+          "pricing": "WaterCop uses dealer-based pricing requiring quotes, indicating premium positioning likely in $400-800+ range for residential systems. Commercial pricing is custom-quoted. Insurance discounts available for certified installations.",
+          "segment": "B2B/B2C",
+          "strengths": [
+            "24+ year market presence since 2000 - established reliability and trust",
+            "Industrial-grade brass valve construction with no plastic components",
+            "Comprehensive product line from single-point to whole-house commercial systems",
+            "Strong dealer network with professional installation and service support",
+            "Insurance carrier partnerships offering premium discounts",
+            "Proven track record with 60-70% of some dealers' business segments",
+            "Scalable from residential to large commercial applications",
+            "Wireless sensor network with unlimited sensor capacity"
+          ],
+          "competitor": "WaterCop",
+          "weaknesses": [
+            "Requires professional installation and dealer network dependency",
+            "No direct consumer pricing transparency",
+            "Battery-powered sensors requiring maintenance",
+            "Limited smart home integration compared to newer competitors",
+            "Primarily reactive leak detection rather than proactive flow monitoring",
+            "Older technology architecture versus AI-powered systems"
+          ],
+          "threatLevel": "High",
+          "floAdvantage": "FLO's proactive AI-powered flow monitoring, MicroLeak technology detecting drops per minute, comprehensive water analytics, and direct-to-consumer model with transparent pricing versus WaterCop's dealer-dependent, reactive sensor-based approach",
+          "isNewEntrant": true,
+          "researchDate": "2026-03-09",
+          "strategicSignal": "WaterCop's established commercial presence and dealer network in multifamily properties poses significant threat to FLO's B2B growth strategy - FLO must leverage superior technology and direct relationships to compete",
+          "threatRationale": "WaterCop's 24-year market presence, strong dealer network, insurance partnerships, and proven commercial/multifamily penetration directly compete with FLO's B2B expansion plans.",
+          "recentDevelopments": [
+            "SmartConnect WiFi mobile app connectivity offering smartphone alerts and remote valve control",
+            "WaterCop Pro Commercial systems for large valve configurations (2-32 inch diameter)",
+            "Dual valve actuator systems for complex multi-valve commercial buildings",
+            "Integrated third-party building automation system compatibility",
+            "Dealer network expansion with professional installation services"
+          ]
+        },
+        {
+          "pricing": "Enterprise pricing model - no public pricing available, likely custom quotes for large commercial installations based on building size and water system complexity",
+          "segment": "B2B",
+          "strengths": [
+            "Advanced AI platform trained on tens of millions of hours of flow data for superior anomaly detection",
+            "Enterprise-grade solution supporting all building water systems (HVAC, cooling towers, fire suppression, domestic)",
+            "Insurance-backed warranties and proven 73% reduction in claims (Munich Re study)",
+            "Blue-chip customer base including Empire State Building, HP, PepsiCo, Microsoft, Google",
+            "Comprehensive ecosystem with hardware-agnostic platform supporting hundreds of valves/meters/sensors",
+            "24/7 staffed control center with water experts providing monitoring and support",
+            "Strong insurance partnerships enabling premium discounts and deductible reductions for customers"
+          ],
+          "competitor": "Wint",
+          "weaknesses": [
+            "High complexity requiring specialized installation and integration expertise",
+            "Enterprise-only focus limits market reach compared to residential solutions",
+            "Significant upfront investment likely required for large-scale deployments",
+            "Dependent on third-party hardware ecosystem for complete solutions"
+          ],
+          "threatLevel": "Critical",
+          "floAdvantage": "FLO's integrated hardware-software solution with direct consumer accessibility at $500 vs Wint's enterprise-only custom pricing model",
+          "isNewEntrant": true,
+          "researchDate": "2026-03-09",
+          "strategicSignal": "Wint's enterprise success validates AI-powered water management market and creates awareness that could accelerate residential adoption, but their complexity creates opportunity for FLO's simpler residential solution",
+          "threatRationale": "Wint dominates enterprise B2B market with proven ROI, insurance backing, and blue-chip customers, creating market education that could drive demand for simpler residential solutions like FLO's.",
+          "recentDevelopments": [
+            "Raised $35 million Series C funding led by Inven Capital and Insight Partners in August 2023",
+            "Launched WINT3 next-generation AI platform with enhanced anomaly detection and autonomous operation capabilities",
+            "Introduced performance warranty program backed by HSB (Munich Re) providing up to $250,000 coverage for water damage",
+            "Prevented over 900 water damage incidents in 2023, saving customers tens of millions in damages",
+            "Achieved 652 million gallons of water savings for 400+ enterprises in 2023, preventing 22,000 metric tons of carbon emissions",
+            "Insurance network nearly tripled in 2023, now includes major carriers, brokers, and risk-engineering firms",
+            "Expanded globally to serve North America, UK, Europe, and Asia Pacific markets"
+          ]
+        },
+        {
+          "pricing": "SaaS subscription model, specific pricing not disclosed - positions as cost-effective alternative to expensive hardware deployments",
+          "segment": "B2B",
+          "strengths": [
+            "Hardware-agnostic platform works with existing utility infrastructure",
+            "AI+physics models require only 8 days for training vs traditional methods",
+            "Detects smaller leaks with high accuracy and low false alarms",
+            "Enables larger DMA zones while maintaining performance",
+            "Strong academic/research foundation from Dutch water utility collaboration",
+            "Proven 3x performance improvement over traditional algorithms"
+          ],
+          "competitor": "HULO",
+          "weaknesses": [
+            "Early-stage company founded only in 2021 with limited track record",
+            "Primarily focused on utility-scale B2B market only",
+            "Requires existing pressure/flow sensor infrastructure to function",
+            "Limited geographic presence (Netherlands, EU, early Latin America)",
+            "No consumer-facing products or residential market presence"
+          ],
+          "threatLevel": "Medium",
+          "floAdvantage": "FLO's integrated hardware+software approach with direct consumer market presence and established North American distribution vs HULO's software-only utility-focused model",
+          "isNewEntrant": true,
+          "researchDate": "2026-03-09",
+          "strategicSignal": "AI-powered leak detection using existing infrastructure is becoming mainstream - FLO should consider similar capabilities for MUD/utility partnerships while maintaining consumer market leadership",
+          "threatRationale": "Strong B2B utility technology but different market focus from FLO's consumer-centric smart water management solutions.",
+          "recentDevelopments": [
+            "Raised €2.3M seed round in October 2025 led by VP Capital and LUMO Labs",
+            "Expanding globally from Netherlands/EU to Latin America",
+            "Founded in 2021 after spin-out from Wetsus research institute",
+            "Demonstrated 3x better results than traditional leak detection algorithms",
+            "Projects to save equivalent of 4+ million Olympic pools annually by 2030"
+          ]
+        },
+        {
+          "pricing": "Not disclosed publicly - appears to follow typical multifamily submetering model with equipment costs of hundreds per unit plus monitoring platform fees",
+          "segment": "B2B",
+          "strengths": [
+            "Ultrasonic technology with no moving parts and 0.01 GPM flow sensitivity",
+            "Proprietary SI-Mesh network eliminates WiFi dependency issues",
+            "Complete end-to-end solution from hardware to analytics platform",
+            "Strong investor backing ($13.6M-$14.4M raised) with Travel + Leisure Co. partnership",
+            "Experienced leadership team with multifamily and PropTech expertise"
+          ],
+          "competitor": "Sensor Industries",
+          "weaknesses": [
+            "Limited to B2B multifamily market without residential consumer presence",
+            "Newer entrant (2015/2016 founding) with less market penetration than established players",
+            "No direct smart shutoff valve offering like FLO's core product",
+            "Relies on single proprietary network technology (LoRaWAN) which could limit scalability",
+            "Pricing not transparent which may hinder customer acquisition"
+          ],
+          "threatLevel": "High",
+          "floAdvantage": "FLO's integrated smart shutoff valve with consumer market presence provides broader market coverage and immediate leak response capability vs Sensor Industries' monitoring-only B2B approach",
+          "isNewEntrant": true,
+          "researchDate": "2026-03-09",
+          "strategicSignal": "Sensor Industries proves market demand for advanced submetering technology in multifamily properties - FLO should accelerate MUD portal development and consider ultrasonic meter technology integration to compete",
+          "threatRationale": "Direct competitor in FLO's RUBS submetering business with superior ultrasonic technology and proven ability to capture 25-40% water consumption reduction claims.",
+          "recentDevelopments": [
+            "SI Submeter with ultrasonic technology launched for multifamily submetering with 16+ year maintenance-free operation",
+            "SI-Mesh proprietary wireless network deployed using LoRaWAN on US902-928 MHz band",
+            "SI-Dash real-time monitoring platform with 24/7 leak detection and usage analytics",
+            "Corporate funding round from Travel + Leisure Co. in January 2023",
+            "Expansion into hospitality sector with vacation ownership properties"
+          ]
+        },
+        {
+          "pricing": "Average submeter installation cost $300 per home with average ROI within 1 year, ongoing costs $200 over 10 years, lease model available for Spectrum meters",
+          "segment": "B2B",
+          "strengths": [
+            "Over 800,000 deployments across US and Canada - massive scale",
+            "30+ years experience in water industry with reliable hardware",
+            "Comprehensive turnkey solution: meters, cellular registers, WaterScope software platform",
+            "1-minute data granularity with cellular connectivity eliminating manual reads",
+            "Strong multifamily/manufactured housing focus with 30% recapture rate improvements",
+            "Wide range of meters 5/8\" to 8\" with ultrasonic Spectrum Wave technology",
+            "Direct billing integration with APIs and billing services",
+            "Real-time leak detection and alerts",
+            "ISO 9001 certified manufacturing facility"
+          ],
+          "competitor": "Metron (US Water Meters)",
+          "weaknesses": [
+            "Focus appears primarily on traditional submetering vs smart water shutoff protection",
+            "Limited consumer/residential direct market presence",
+            "Requires physical meter installation vs retrofit solutions",
+            "Cellular dependency for connectivity"
+          ],
+          "threatLevel": "High",
+          "floAdvantage": "FLO's smart shutoff protection and consumer market penetration vs Metron's pure metering focus",
+          "isNewEntrant": true,
+          "researchDate": "2026-03-09",
+          "strategicSignal": "Major established player with massive deployment scale targeting same B2B multifamily market as FLO's MUD portal - represents significant competitive threat in property management water solutions",
+          "threatRationale": "Metron dominates B2B submetering with 800,000+ deployments and comprehensive solutions directly competing with FLO's MUD/multifamily market.",
+          "recentDevelopments": [
+            "WaterMasters white-glove monitoring service announced October 2024",
+            "Polaris Real Estate Partners partnership announced January 2025 showing 40% water reduction",
+            "New executive appointments in 2024 including VP of Strategic Partnerships and VP of Marketing",
+            "Awarded Top Water Management Solutions 2025 by PropTech Outlook"
+          ]
+        },
+        {
+          "pricing": "SaaS recurring revenue model with hardware + cloud software combination, positioned as cost-effective compared to competitors, targeting property management software market which typically ranges $1-12 per unit monthly",
+          "segment": "B2B",
+          "strengths": [
+            "Comprehensive ecosystem combining revenue-grade submetering, leak detection, and remote shutoff in single platform",
+            "Modular IoT platform (AquaSense, AquaLink, AquaFlow, AquaControl) with seamless integration",
+            "Serves both property management and water utility markets",
+            "Backed by publicly-traded Geospace Technologies with manufacturing capabilities",
+            "Real-time monitoring with automated shutoff and flow analysis",
+            "Compliance support for municipal regulations",
+            "Multiple connectivity options (LoRaWAN, LTE-M, Bluetooth)"
+          ],
+          "competitor": "Aquana (Geospace)",
+          "weaknesses": [
+            "Relatively small acquisition ($1.4M initial) suggests limited scale",
+            "Founded only in 2017, newer market presence compared to established players",
+            "Geospace primarily seismic/oil industry company, water management is diversification play",
+            "Limited pricing transparency in market positioning"
+          ],
+          "threatLevel": "High",
+          "floAdvantage": "FLO's consumer-focused brand recognition and established retail partnerships versus Aquana's primarily B2B/utility-focused approach",
+          "isNewEntrant": true,
+          "researchDate": "2026-03-09",
+          "strategicSignal": "Aquana represents the exact convergence threat FLO faces - a competitor offering both FLO's leak detection/shutoff capabilities AND comprehensive revenue-grade submetering for property billing in one integrated platform, specifically targeting multifamily properties where FLO sells through MUD portal.",
+          "threatRationale": "Aquana directly competes in FLO's core B2B multifamily market with comprehensive revenue-grade submetering that FLO lacks, plus targets same leak detection/shutoff use cases with enterprise-grade solutions.",
+          "recentDevelopments": [
+            "Geospace Smart Water segment delivered double-digit revenue growth for fourth sequential fiscal year through 2025",
+            "Increased market acceptance of Aquana products in both domestic and Caribbean markets",
+            "AquaSense identified as top-selling product for multifamily properties",
+            "Emphasis on modular ecosystem approach positioning as industry innovation leader",
+            "Manufacturing domestically under Geospace umbrella with 40+ years experience"
+          ]
+        },
+        {
+          "pricing": "Estimated $3,600 for hardware and implementation per property (common areas), $67 annual savings per unit claimed",
+          "segment": "B2B",
+          "strengths": [
+            "Massive scale - services 2.2+ million submetering devices across 4,000+ properties",
+            "Comprehensive multifamily platform integration beyond just water management",
+            "AI-powered leak detection with real-time alerts and portfolio-level analytics",
+            "Proven ROI with documented case studies showing significant water and cost savings",
+            "Full-service offering including installation, maintenance, and ongoing support",
+            "Resident engagement through gamified mobile app with usage tracking and benchmarking"
+          ],
+          "competitor": "RealPage Smart Water",
+          "weaknesses": [
+            "Complex platform with steep learning curve reported by users",
+            "Customer service challenges frequently cited by users",
+            "High overall platform costs may limit adoption by smaller operators",
+            "Integration complexity with external systems requires custom development"
+          ],
+          "threatLevel": "High",
+          "floAdvantage": "FLO's consumer-focused whole-home protection approach vs RealPage's B2B multifamily-only scope",
+          "isNewEntrant": true,
+          "researchDate": "2026-03-09",
+          "strategicSignal": "RealPage's 300% ROI case studies and expansion from pilot to 26 properties demonstrates strong product-market fit in multifamily - FLO must differentiate on technology superiority or target different B2B segments",
+          "threatRationale": "RealPage dominates multifamily water management with massive scale, proven ROI, and comprehensive platform integration that directly competes with FLO's B2B ambitions.",
+          "recentDevelopments": [
+            "Won 2023 MFE Awards Best Use of Proptech Grand Prize",
+            "Camden Property Trust expanded from 2-property pilot to 26 apartment communities (2025)",
+            "Demonstrated 300% ROI and 9.5% water usage reduction in Camden pilot program",
+            "Serves over 19 million units worldwide through comprehensive real estate platform",
+            "Integrated Smart Water into broader STRATIS Smart Buildings ecosystem"
+          ]
+        },
+        {
+          "pricing": "WiFi model ~$400-600, Mini model significantly lower (~$200-300 range), 25% bulk discounts for 4+ meters, subscription plans for premium data streaming, 2-3 year bundles available with 15-20% hardware savings",
+          "segment": "B2B",
+          "strengths": [
+            "Non-invasive clamp-on installation requiring no pipe cutting or plumber",
+            "Universal compatibility with 80+ pipe types and sizes (3/4\" to 4\" with Prime versions)",
+            "Strong accuracy claims of +/- 0.5% to 2% flow reading with ultrasonic technology",
+            "Comprehensive product line from residential Mini to enterprise ProLink with LoRaWAN",
+            "Cloud-based AI optimization and automatic calibration capabilities",
+            "Real-time monitoring with 43,200 data points per day and instant leak alerts"
+          ],
+          "competitor": "Bluebot",
+          "weaknesses": [
+            "Requires electrical power (10ft USB-C cord) limiting installation locations",
+            "WiFi dependency for basic models may limit deployment in poor coverage areas",
+            "Customer reviews note app and web interface are 'clunky and buggy'",
+            "No water shutoff capability - monitoring only solution",
+            "Relatively new market entrant (founded 2017) with limited enterprise track record"
+          ],
+          "threatLevel": "High",
+          "floAdvantage": "FLO's integrated water shutoff capability and proven insurance partnerships provide complete protection vs Bluebot's monitoring-only approach",
+          "isNewEntrant": true,
+          "researchDate": "2026-03-09",
+          "strategicSignal": "Bluebot's non-invasive clamp-on technology eliminates the major installation barrier that limits traditional submetering adoption, potentially accelerating market penetration in multifamily properties where FLO competes with MUD and RUBS solutions",
+          "threatRationale": "Direct competitive overlap in multifamily submetering with superior ease of installation and broader pipe compatibility at potentially lower cost points.",
+          "recentDevelopments": [
+            "Launched Bluebot Mini as most compact and affordable model in September 2025 to lower cost barriers",
+            "Expanded LoRaWAN ProLink wireless capabilities for large portfolio monitoring in late 2025",
+            "Enhanced AI-powered flow sensor optimization and automatic calibration capabilities in 2025",
+            "Introduced Dollarize™ feature converting water usage to real dollar costs for better financial visibility"
+          ]
+        },
+        {
+          "pricing": "Hardware $349-399 per unit + $6/month subscription; optional billing service $1-2/month per unit; total cost under $400 per unit vs $50k+ for traditional inline meters",
+          "segment": "B2B",
+          "strengths": [
+            "Non-invasive clamp-on installation in minutes with no plumbing required",
+            "Cellular connectivity eliminates WiFi dependencies",
+            "10-year battery life with no external power needed",
+            "Ultra-low minimum orders (no 100+ unit requirements like competitors)",
+            "Integrated end-to-end billing platform with tenant payment processing",
+            "Strong ROI messaging (25-30% water usage reduction, NOI increases)",
+            "Regulatory compliance expertise (Colorado HB 1090)",
+            "Serves full spectrum from small multifamily to large portfolios"
+          ],
+          "competitor": "SimpleSUB Water",
+          "weaknesses": [
+            "Limited funding ($200K raised) vs well-capitalized competitors",
+            "Small team (~12 employees) may limit scale and market penetration",
+            "Newer technology may face adoption hesitancy vs established inline meters",
+            "Revenue reportedly only $750K as of mid-2025",
+            "Patent-pending status creates IP vulnerability"
+          ],
+          "threatLevel": "High",
+          "floAdvantage": "FLO's proven smart water shutoff technology, insurance partnerships, and established consumer brand vs SimpleSUB's B2B-only focus and early-stage market presence",
+          "isNewEntrant": true,
+          "researchDate": "2026-03-09",
+          "strategicSignal": "SimpleSUB proves non-invasive cellular submetering is viable at scale - FLO should accelerate MUD Portal development and consider acquiring this technology/team before they gain more traction in multifamily market",
+          "threatRationale": "SimpleSUB directly targets FLO's B2B multifamily opportunity with superior ease of installation, lower costs, and integrated billing that solves the complete water management problem.",
+          "recentDevelopments": [
+            "Launched SimpleSUB Billing integrated payment platform with 90-day free trial (March 2025)",
+            "Added high flow leak alerts and complete cellular carrier coverage",
+            "Expanded from Z1 to multiple meter models (i1, x1, x2) with specialized applications",
+            "Patent-pending ultrasonic technology achieving 100% ±5% accuracy",
+            "Growing team with new sales and marketing hires"
+          ]
+        },
+        {
+          "pricing": "No upfront costs for RUBS programs - service fees typically passed to residents; Property owners can see ROI in under 6 months; Installation costs around $225 per unit for gas submeters; Service includes free consultations and customized programs",
+          "segment": "B2B",
+          "strengths": [
+            "Comprehensive end-to-end service from design to installation to billing and collections",
+            "Multi-utility capabilities (water, gas, electric) with both submetering and RUBS options",
+            "Strong regulatory compliance expertise across 48+ states",
+            "Property management software integration and convergent billing platform",
+            "Vacant Cost Recovery (VCR) services to prevent revenue leakage",
+            "Proven financial impact - can add $6000+ monthly to property NOI",
+            "Over 95 standard reports and detailed analytics"
+          ],
+          "competitor": "Anchor Utility",
+          "weaknesses": [
+            "Requires specific building infrastructure for submetering (individual water lines, breaker panels)",
+            "Limited to traditional utility billing - no smart water monitoring or leak detection",
+            "Primarily focused on cost recovery rather than water conservation technology",
+            "No consumer-facing smart home integration or IoT capabilities"
+          ],
+          "threatLevel": "Medium",
+          "floAdvantage": "FLO's smart water shutoff technology and leak detection capabilities provide proactive water damage prevention that Anchor cannot offer - FLO protects properties while Anchor only bills for usage",
+          "isNewEntrant": true,
+          "researchDate": "2026-03-09",
+          "strategicSignal": "Anchor's 6-year Inc. 5000 streak and multi-state expansion shows strong demand for utility cost recovery solutions in multifamily - FLO should emphasize smart leak prevention value proposition to differentiate from pure billing plays",
+          "threatRationale": "Anchor dominates the traditional utility billing/submetering space that overlaps with FLO's RUBS offering but lacks smart water management technology.",
+          "recentDevelopments": [
+            "6 straight years on Inc. 5000 fastest growing companies list through 2019",
+            "Formerly known as Banyan Utility, rebranded to Anchor Utility",
+            "Operates in 48 states with ability to service all 50, plus Canada and Mexico",
+            "Over 20 years experience in multifamily utility submetering and RUBS",
+            "Expanded into single-family build-to-rent, student housing, and commercial markets"
+          ]
+        },
+        {
+          "pricing": "Meters ~$200+ each, installation $200-500/unit, total system costs $49,500 savings vs mechanical for 200-unit building, SaaS model for platform services",
+          "segment": "B2B",
+          "strengths": [
+            "Complete end-to-end solution with Axioma ultrasonic meters, LoRaWAN gateways, and Mainhive cloud platform",
+            "16-year battery life ultrasonic meters with no moving parts and IP68 protection",
+            "Advanced leak detection with instant alerts to both property managers and residents",
+            "Mobile app ecosystem for both tenants and property managers",
+            "Strong regulatory compliance including California weights and measures certification",
+            "Hardware-agnostic platform supporting multiple communication protocols (LoRaWAN, NB-IoT, WM-Bus)",
+            "Part of ICOR Group with 70 companies and global manufacturing capabilities"
+          ],
+          "competitor": "Mainlink",
+          "weaknesses": [
+            "Higher upfront costs compared to mechanical meters",
+            "Relatively new entrant competing against established players",
+            "Dependency on LoRaWAN network infrastructure",
+            "Limited focus on single-family residential vs multifamily properties"
+          ],
+          "threatLevel": "High",
+          "floAdvantage": "FLO's consumer-focused approach with smart shutoff valves and established residential market presence versus Mainlink's B2B multifamily focus",
+          "isNewEntrant": true,
+          "researchDate": "2026-03-09",
+          "strategicSignal": "Mainlink represents the full-stack B2B submetering threat with complete hardware/software integration, strong leak detection capabilities, and aggressive expansion into smart building IoT beyond just water management",
+          "threatRationale": "Direct competitor in multifamily submetering with comprehensive solution including leak detection, mobile apps, and proven cost savings.",
+          "recentDevelopments": [
+            "Strong presence in multifamily apartment buildings with 202-unit deployment in California saving $40,400",
+            "Growing partnerships in Balkans region through Vestitel deal",
+            "Integration with German utilities for holistic pipe network monitoring",
+            "Expanding from submetering to full smart building IoT platforms including HVAC and temperature sensors"
+          ]
+        },
+        {
+          "pricing": "Custom subscription-based SaaS pricing model with enterprise-focused pricing, no public pricing available but offers free trial without credit card",
+          "segment": "B2B",
+          "strengths": [
+            "Full-service billing platform handling multi-utility suppliers (electricity, water, heating, gas)",
+            "Advanced AI/ML algorithms for predictive customer behavior and experience optimization",
+            "Comprehensive tenant billing automation for multi-service bills and financial reporting",
+            "28+ years industry experience with flexible architecture supporting complex billing scenarios",
+            "Strong integration capabilities replacing multiple legacy systems",
+            "Support for multiple tariffs, apportionment billing, and prepaid/postpaid hybrid models"
+          ],
+          "competitor": "MaxBill",
+          "weaknesses": [
+            "High customization requirements and complexity leading to longer implementation times",
+            "Costs to maintain and operate can be inflexible according to user reviews",
+            "Standard technologies like ADFS require custom development",
+            "User interface needs modernization compared to newer competitors",
+            "Billing accuracy issues requiring manual oversight to reduce errors"
+          ],
+          "threatLevel": "Medium",
+          "floAdvantage": "FLO's hardware-software integration with real-time leak detection and automated shutoffs versus MaxBill's pure software billing focus without water management capabilities",
+          "isNewEntrant": true,
+          "researchDate": "2026-03-09",
+          "strategicSignal": "MaxBill's expansion into comprehensive utility billing for multi-tenant properties with AI-powered automation directly threatens FLO's B2B submetering and billing services, particularly as they target the same property management customers needing water billing solutions.",
+          "threatRationale": "MaxBill competes directly in FLO's MUD Property Manager and RUBS submetering space with comprehensive tenant billing solutions but lacks water management hardware integration.",
+          "recentDevelopments": [
+            "Expanded into EV charging market with top-3 Energy/EV provider in Baltics for cross-border billing consolidation across 3 countries",
+            "New partnerships established in Saudi Arabia and Singapore in 2025 expanding Middle East and Southeast Asia presence",
+            "Positioning for 2026 growth with focus on 'billing built to perform' and industrial billing solutions",
+            "Client base spans Energy Retail UK (2M service points), Communal Energy Partner UK, Firmus Energy Ireland (110K+ customers)"
+          ]
+        },
+        {
+          "pricing": "Custom enterprise pricing, quote-based SaaS model with hardware components and professional services fees calculated per unit deployed",
+          "segment": "B2B",
+          "strengths": [
+            "Comprehensive integrated platform covering access control, leak detection, energy management, and work order automation",
+            "Strong market position with 15 of top 20 multifamily operators as customers",
+            "3.1+ million connected devices deployed across 600+ clients",
+            "Deep PMS integrations with Yardi, RealPage, Entrata, and ResMan",
+            "AI-powered SMRT IQ for conversational property insights",
+            "Proven ROI - leak sensors save average $10,000 per insurance claim",
+            "Strong enterprise scalability and reliability track record"
+          ],
+          "competitor": "SmartRent",
+          "weaknesses": [
+            "Complex deployment requiring Customer Success Manager guidance",
+            "Hardware dependency increases implementation complexity vs pure software",
+            "Primarily focused on multifamily/residential vs commercial markets",
+            "Higher upfront investment due to hardware components",
+            "Recent financial struggles requiring major cost reduction program"
+          ],
+          "threatLevel": "High",
+          "floAdvantage": "FLO's pure water-focused approach with immediate shutoff capability vs SmartRent's broader but less specialized leak detection within general smart home platform",
+          "isNewEntrant": false,
+          "researchDate": "2026-03-09",
+          "strategicSignal": "SmartRent's AI integration and energy management expansion shows platform evolution beyond basic leak detection toward comprehensive property intelligence - FLO must accelerate platform capabilities beyond water shutoff to compete.",
+          "threatRationale": "SmartRent's massive scale, deep market penetration, and comprehensive platform integration pose significant competitive threat in multifamily B2B water management.",
+          "recentDevelopments": [
+            "Achieved positive EBITDA and year-over-year revenue growth in Q4 2025",
+            "Launched SMRT IQ conversational AI platform for property insights",
+            "Expanded energy management capabilities to reduce HVAC costs and support ESG goals",
+            "Appointed new CEO Frank Martell in June 2025",
+            "Completed $30 million cost reduction program targeting cash flow neutrality",
+            "Added Product Advisory Council with senior multifamily executives",
+            "Enhanced integrations with Funnel, Knock, RentCafe and CRMIQ",
+            "Grew Smart Apartments solution to 870,000 homes nationwide (10.5% YoY growth)"
+          ]
+        },
+        {
+          "pricing": "Bundled pricing with FlexCapital TaaS financing at $0 down, includes hardware, installation, training, and support; specific costs not disclosed",
+          "segment": "B2B",
+          "strengths": [
+            "Patented LoRaWAN thermostat with integrated smart hub reduces hardware by 30%",
+            "Purpose-built for multifamily from ground up, not single-family retrofits",
+            "Comprehensive platform: access control, WiFi, IoT, and water sensors",
+            "Strong partnerships with major players (GFiber, Sensor Industries)",
+            "Integrated property management system compatibility"
+          ],
+          "competitor": "Quext IoT",
+          "weaknesses": [
+            "Relatively new company founded in 2017",
+            "Limited market penetration compared to established players",
+            "Primarily focused on access control and HVAC, less comprehensive water management",
+            "Pricing transparency lacking",
+            "Potential connectivity issues mentioned in reviews"
+          ],
+          "threatLevel": "Medium",
+          "floAdvantage": "FLO's dedicated water management expertise and proven damage prevention track record vs Quext's broader but less specialized approach",
+          "isNewEntrant": false,
+          "researchDate": "2026-03-09",
+          "strategicSignal": "Quext's rapid expansion through strategic partnerships and TaaS financing model could accelerate multifamily IoT adoption, pressuring specialized players",
+          "threatRationale": "Strong technical innovation and partnerships but limited water-specific expertise compared to FLO's specialized water management focus",
+          "recentDevelopments": [
+            "GFiber partnership for managed WiFi integration with 3 Gig bulk fiber (Nov 2025)",
+            "Investment and partnership with Sensor Industries for water damage detection (May 2023)",
+            "LaMarco Systems partnership for Midwest smart living expansion",
+            "FlexCapital TaaS leasing program launch for $0 down financing"
+          ]
+        },
+        {
+          "pricing": "Custom pricing model requiring sales consultation - no transparent pricing available. Competitors start at $250+ per month plus $1 per unit. Yardi requires integration with Voyager or Breeze platform.",
+          "segment": "B2B",
+          "strengths": [
+            "Comprehensive end-to-end utility management suite covering billing, expense management, energy efficiency and sustainability reporting",
+            "Strong integration with existing property management ecosystem (Voyager/Breeze required)",
+            "Automated utility invoice processing and bill payment capabilities",
+            "Full submeter installation, maintenance and data administration services",
+            "Established market presence with significant client base across commercial and residential sectors"
+          ],
+          "competitor": "Yardi Utility Management",
+          "weaknesses": [
+            "Requires existing Yardi Voyager or Breeze platform - not standalone solution",
+            "Complex user interface reported as difficult to navigate",
+            "Strange billing structure with random timing reported by users",
+            "Off-site invoice processing makes expediting past due balances challenging",
+            "Customer service issues with coders being hard to reach and making mistakes"
+          ],
+          "threatLevel": "Medium",
+          "floAdvantage": "FLO's standalone smart water shutoff solution provides immediate water protection without requiring full property management platform integration",
+          "isNewEntrant": false,
+          "researchDate": "2026-03-09",
+          "strategicSignal": "Yardi's comprehensive utility management suite with established property management integration poses competitive threat in B2B multifamily market, but their platform dependency and user experience challenges create opportunities for standalone smart water solutions.",
+          "threatRationale": "Strong B2B utility management capabilities but limited by platform dependency and user experience issues.",
+          "recentDevelopments": [
+            "Expanded utility billing management offerings for multifamily properties with enhanced energy management and analytics services",
+            "Launched automated submetering capabilities with leak detection and alerts",
+            "Introduced convergent billing combining rent and utility charges for improved payment compliance",
+            "Enhanced mobile app for meter reading with photo validation and direct system sync"
+          ]
+        },
+        {
+          "pricing": "Pilot program costs approximately $3,600 for two properties including hardware and implementation fees for common areas (with existing unit submetering). Camden Property Trust saw $24,931 annualized savings with 300%+ ROI after 3 months. Estimated $67 per unit annual savings from leak mitigation.",
+          "segment": "B2B",
+          "strengths": [
+            "Comprehensive multifamily utility management suite including billing, submetering, and smart water technology",
+            "Proven ROI - Camden saved 626,000 gallons water and $24,931 annually with 300%+ ROI",
+            "Massive scale with 200,000+ submeters installed across 830+ communities",
+            "AI-driven submeter technology with real-time IoT sensors for leak detection",
+            "Integration with property management systems and resident engagement through mobile app",
+            "Full-service resident billing and expense management capabilities"
+          ],
+          "competitor": "RealPage Utility Management",
+          "weaknesses": [
+            "Major regulatory scrutiny and ongoing litigation creating uncertainty for customers",
+            "DOJ settlement restricts use of competitive data limiting algorithm effectiveness",
+            "Customer complaints about billing accuracy and lack of meter readings transparency",
+            "Platform migration disrupted existing user workflows",
+            "Focus primarily on multifamily sector limits addressable market"
+          ],
+          "threatLevel": "Medium",
+          "floAdvantage": "FLO's consumer-direct model and automatic shutoff technology avoids regulatory scrutiny around data sharing while providing immediate leak protection versus RealPage's detection-only approach",
+          "isNewEntrant": false,
+          "researchDate": "2026-03-09",
+          "strategicSignal": "RealPage's DOJ settlement creates opportunity for compliant competitors in B2B water management space, particularly those focused on leak prevention rather than detection-only solutions",
+          "threatRationale": "Strong B2B multifamily presence but regulatory constraints and litigation limit expansion potential",
+          "recentDevelopments": [
+            "DOJ settlement reached November 2025 regarding algorithmic pricing practices, requiring restrictions on use of competitors' nonpublic data",
+            "Launched Smart Water solution in 2021 leveraging IoT submeter technology for water leak detection and management",
+            "Migrated utility management platform to unified RealPage platform (discontinued standalone portal by December 2022)",
+            "Installed 200,000+ submeters across 830+ apartment communities in past 3 years",
+            "Facing ongoing class action litigation and state AG enforcement actions separate from DOJ settlement"
+          ]
+        },
+        {
+          "pricing": "Administrative fees charged to properties for utility management services; exact B2B pricing not publicly disclosed",
+          "segment": "B2B",
+          "strengths": [
+            "Market leadership position serving 8 million units nationwide",
+            "Comprehensive platform covering metering, billing, payment, procurement, analytics",
+            "Strong integration capabilities with property management software",
+            "Regulatory compliance expertise across multiple jurisdictions",
+            "Full-service offering including sub-meter installation and maintenance",
+            "AI-powered utility management and automation capabilities",
+            "ESG reporting and sustainability features"
+          ],
+          "competitor": "Conservice",
+          "weaknesses": [
+            "Poor customer satisfaction with numerous billing complaints",
+            "BBB issues with unsubstantiated marketing claims",
+            "RUBS billing method creates tenant confusion and dissatisfaction",
+            "Customer service issues frequently redirecting residents to property offices",
+            "Regulatory scrutiny and compliance challenges in some states"
+          ],
+          "threatLevel": "High",
+          "floAdvantage": "FLO's real-time leak detection and automatic shutoff provides immediate water protection vs Conservice's post-consumption billing focus",
+          "isNewEntrant": false,
+          "researchDate": "2026-03-09",
+          "strategicSignal": "Conservice's TPG acquisition signals significant consolidation and expansion capital in utility management space",
+          "threatRationale": "Dominant market position with comprehensive B2B platform and recent PE backing for aggressive expansion",
+          "recentDevelopments": [
+            "TPG acquired majority stake alongside Advent International in December 2025",
+            "Acquired Onboard telecom management platform in May 2024",
+            "Acquired WaterWatch Corporation in March 2025",
+            "Acquired Goby ESG platform in 2021-2023 for sustainability reporting",
+            "Claims to be nation's largest multifamily utility management provider"
+          ]
+        },
+        {
+          "pricing": "No unit minimums, no long-term contracts, no setup fees, transparent monthly flat fee per unit (specific amount not disclosed), free customizable system with cost recovery up to 90%",
+          "segment": "B2B",
+          "strengths": [
+            "Market-leading RUBS platform with proven 10-40% utility consumption reduction",
+            "Full-service and self-service models with no minimum unit requirements",
+            "Strong AppFolio integration and property management software compatibility",
+            "Comprehensive utility coverage (water, sewer, trash, gas, electricity)",
+            "Automated billing cutting admin time by up to 20 hours monthly",
+            "Founded by property owners with direct industry experience"
+          ],
+          "competitor": "Livable",
+          "weaknesses": [
+            "Limited to RUBS methodology rather than actual submetering",
+            "Potential tenant pushback due to perceived unfairness of square footage-based allocation",
+            "Smaller company (11-50 employees) compared to enterprise competitors",
+            "No apparent recent funding or major technology innovations",
+            "Relies heavily on property management partnerships for growth"
+          ],
+          "threatLevel": "Medium",
+          "floAdvantage": "FLO offers actual water consumption monitoring and leak detection through physical hardware, providing precise usage data versus Livable's estimation-based RUBS allocation system",
+          "isNewEntrant": false,
+          "researchDate": "2026-03-09",
+          "strategicSignal": "Livable dominates the multifamily utility cost recovery space with no minimum requirements and proven ROI, representing a significant competitor in B2B water billing but not smart water monitoring/leak detection",
+          "threatRationale": "Strong market position in multifamily RUBS billing with proven ROI but limited to cost allocation rather than smart water monitoring/protection",
+          "recentDevelopments": [
+            "Partnership with Strategic Sanitation Services for comprehensive trash management cost recovery",
+            "Increased ROI by 2% for a 100-unit property through cost recovery and efficiency gains",
+            "Seamless AppFolio integration for streamlined property management workflows",
+            "Company founded over a decade ago (2009) with San Francisco roots"
+          ]
+        },
+        {
+          "pricing": "Unable to determine - company not found",
+          "segment": "B2B",
+          "strengths": [
+            "Company not identified in market research"
+          ],
+          "competitor": "Ratio Utilities",
+          "weaknesses": [
+            "Company not identified in market research"
+          ],
+          "threatLevel": "Low",
+          "floAdvantage": "Unable to assess against non-existent competitor",
+          "isNewEntrant": false,
+          "researchDate": "2026-03-09",
+          "strategicSignal": "Verify company name and existence before conducting competitive analysis",
+          "threatRationale": "No evidence of company existence in smart water B2B market",
+          "recentDevelopments": [
+            "No company found with this name in smart water B2B space"
+          ]
+        },
+        {
+          "pricing": "Grohe Sense Guard controller ~$600-700, additional Sense sensors ~$100 each, complete Water Security Kit with 3 sensors ~$800-900",
+          "segment": "B2C",
+          "strengths": [
+            "Premium German engineering with brass threads vs plastic competitors",
+            "Comprehensive water management including pressure monitoring, temperature sensing, and automatic shutoff",
+            "Self-learning AqualQ algorithm that adapts to household consumption patterns",
+            "Works offline during connectivity loss for pipe burst protection",
+            "Professional installation support and lifetime mechanical warranty",
+            "Integration with GROHE ecosystem and Nest compatibility"
+          ],
+          "competitor": "Grohe Sense Guard",
+          "weaknesses": [
+            "Requires professional installation (90+ minutes) vs DIY options",
+            "Premium pricing significantly higher than competitors",
+            "Only supports 2.4GHz WiFi, not 5GHz",
+            "App reliability issues and user interface complaints",
+            "Limited to single-family residential use only",
+            "Some connectivity and functionality reliability concerns reported"
+          ],
+          "threatLevel": "Medium",
+          "floAdvantage": "FLO's simpler DIY installation, competitive pricing (~$500 vs $700+), and stronger focus on water management analytics give it accessibility and value advantages over Grohe's premium positioning",
+          "isNewEntrant": false,
+          "researchDate": "2026-03-09",
+          "strategicSignal": "Grohe's premium positioning and professional installation requirement create opportunity gap for FLO's DIY-friendly, competitively-priced solution in mainstream market",
+          "threatRationale": "Premium European brand with advanced features but higher pricing and installation complexity limit market penetration versus FLO's value proposition",
+          "recentDevelopments": [
+            "App version 2.4.5 released in May 2025 with bug fixes",
+            "Improved app connectivity and user interface updates throughout 2024-2025",
+            "Fixed Google login issues in 2024",
+            "Enhanced firmware update processes and bug fixes for device integration",
+            "Improved notification management with swipe-to-delete feature"
+          ]
+        },
+        {
+          "pricing": "L5 Water Shutoff Valve positioning as cost-effective professional-grade solution, no specific retail pricing disclosed but marketed through pro installer channels with 5-year warranty",
+          "segment": "B2C",
+          "strengths": [
+            "Professional installer channel focus with Pro-IQ Services ecosystem",
+            "Established Honeywell/Braukmann brand heritage and reputation",
+            "Comprehensive ecosystem connecting up to 30 leak detectors per valve",
+            "Strong professional installer support and training programs",
+            "Expandable sensor coverage up to 500ft with daisy-chain capability"
+          ],
+          "competitor": "Resideo Leak Defense (L5 WiFi Water Shutoff)",
+          "weaknesses": [
+            "Complex WiFi setup requiring dedicated 2.4GHz networks causing installation difficulties",
+            "Primarily professional-install model limits direct consumer access",
+            "Short 5ft sensor cable inadequate for typical installations requiring extensions",
+            "Limited direct-to-consumer marketing presence compared to competitors",
+            "Dependence on third-party installers for customer service quality"
+          ],
+          "threatLevel": "Medium",
+          "floAdvantage": "FLO's direct-to-consumer model with simplified installation vs Resideo's professional-only approach creates accessibility advantage",
+          "isNewEntrant": false,
+          "researchDate": "2026-03-09",
+          "strategicSignal": "Resideo's planned corporate split and focus on Pro-IQ subscription services indicates strategic pivot toward recurring revenue model in smart water space",
+          "threatRationale": "Strong professional installer network and brand heritage pose competitive threat but complex installation requirements limit market reach",
+          "recentDevelopments": [
+            "L5 WiFi Water Shutoff Valve launched November 2022 with L1 detectors rolling out March 2023",
+            "Pro-IQ Services cloud platform expanded for professional installers with subscription-based diagnostics",
+            "Company planning split into two independent businesses (ADI and Products & Solutions) by H2 2026",
+            "New enterprise resource planning system implemented in U.S. operations August 2024"
+          ]
+        },
+        {
+          "pricing": "Historical pricing: sensors ~$69 each, shutoff valve ~$159, complete bundles ~$699, sensors available at major retailers like Home Depot (~$59) and Lowe's",
+          "segment": "B2C",
+          "strengths": [
+            "5-second automatic water shutoff capability",
+            "Extensive smart home platform integration (Google Assistant, Alexa, SmartThings, Control4)",
+            "Professional installation network and 5-year warranty when professionally installed",
+            "Both detect-only and protect modes available",
+            "Appliance-level protection options"
+          ],
+          "competitor": "LeakSmart",
+          "weaknesses": [
+            "Company discontinued operations and cloud services shut down",
+            "WiFi-based sensors no longer functional",
+            "Higher sensor pricing compared to competitors",
+            "Required professional installation for main valve",
+            "Battery-powered sensors with limited lifespan"
+          ],
+          "threatLevel": "Low",
+          "floAdvantage": "FLO has active business operations, ongoing support, and flow monitoring capabilities that LeakSmart lacked",
+          "isNewEntrant": false,
+          "researchDate": "2026-03-09",
+          "strategicSignal": "LeakSmart's failure demonstrates the critical importance of reliable cloud infrastructure and ongoing business viability - a key differentiator for FLO",
+          "threatRationale": "LeakSmart is effectively out of business with discontinued cloud services making most products non-functional.",
+          "recentDevelopments": [
+            "Company appears discontinued with cloud services shut down as of mid-2024",
+            "Parent company Waxman sold plumbing and floor care businesses after 80+ years",
+            "WiFi sensors and hub no longer function due to cloud service termination",
+            "Zigbee-based valves and sensors can still operate through third-party hubs like SmartThings"
+          ]
+        },
+        {
+          "pricing": "$27-60 for starter kits (gateway + 3-5 sensors), individual sensors $10-12 each, frequent promotions available",
+          "segment": "B2C",
+          "strengths": [
+            "Very affordable pricing with frequent sales/coupons",
+            "Easy DIY installation with no professional setup required",
+            "Multiple detection methods (top and bottom probes)",
+            "Loud 100-105dB alarms with adjustable volume",
+            "Real-time app/email/SMS notifications",
+            "Scalable system (10-100 sensors per gateway)",
+            "Long battery life (5 years on newer models)",
+            "IP66-67 waterproof rating"
+          ],
+          "competitor": "Govee Water Sensor",
+          "weaknesses": [
+            "Only supports 2.4GHz WiFi networks",
+            "Single-purpose hub with no smart home integration",
+            "Poor battery status monitoring leads to failures",
+            "Hub connectivity issues requiring frequent resets",
+            "Limited Home Assistant/smart home platform compatibility",
+            "False alarms reported by some users",
+            "App UI confusion when managing multiple sensors",
+            "Detection only, no water shutoff capability"
+          ],
+          "threatLevel": "Medium",
+          "floAdvantage": "FLO offers automatic water shutoff, professional monitoring, comprehensive home protection vs Govee's basic detection-only approach",
+          "isNewEntrant": false,
+          "researchDate": "2026-03-09",
+          "strategicSignal": "Govee dominates the entry-level DIY water sensor market with aggressive pricing - FLO should emphasize professional monitoring and automatic shutoff value proposition",
+          "threatRationale": "Strong price point and ease of installation appeal to budget-conscious consumers but lacks FLO's comprehensive protection features",
+          "recentDevelopments": [
+            "GoveeLife Water Leak Detector 2 with 1/4 mile LoRa range",
+            "New Generation 2 models with extended battery life (5 years)",
+            "Ultra-long range models with 1804ft-1968ft communication distance",
+            "Gateway supports up to 100 sensors in newest models"
+          ]
+        },
+        {
+          "pricing": "Quote-based B2B model, no public pricing available - primarily targets commercial buildings with cellular-connected sensor systems",
+          "segment": "B2B",
+          "strengths": [
+            "Strong commercial focus with 12,000+ buildings served",
+            "Cellular connectivity eliminates WiFi dependency",
+            "Less than 1-minute installation without tools",
+            "AI-powered AlertAQ platform with self-learning algorithms",
+            "Financial backing from Fortune 500 parent company Watsco",
+            "Proven ROI with $100M+ saved by customers",
+            "North American manufacturing for supply chain stability"
+          ],
+          "competitor": "Alert Labs",
+          "weaknesses": [
+            "Primarily B2B focused, limited B2C presence",
+            "Quote-based pricing lacks transparency",
+            "Smaller company footprint vs larger competitors",
+            "Limited product ecosystem compared to integrated platforms"
+          ],
+          "threatLevel": "Medium",
+          "floAdvantage": "FLO's integrated B2C smart water shutoff systems (~$500) with monthly protection plans offer accessible residential solutions vs Alert Labs' commercial-focused quote-based model",
+          "isNewEntrant": false,
+          "researchDate": "2026-03-09",
+          "strategicSignal": "Alert Labs demonstrates the commercial viability of cellular-connected water monitoring with significant scale (12,000+ buildings) - validates market demand for reliable water management solutions",
+          "threatRationale": "Strong B2B commercial water management player with proven scale but limited overlap with FLO's residential market focus",
+          "recentDevelopments": [
+            "Won 2025 BGIS Global Innovation Supplier Award",
+            "Customers have saved over $100M with platform",
+            "Operating as subsidiary of Watsco Inc (Fortune 500 HVACR distributor)",
+            "Expanded to 12,000+ commercial buildings served",
+            "B-Corp certified with 98.9 impact score"
+          ]
+        }
+      ],
+      "executive_report": "# FLO Technologies Weekly Executive Report\n*Week of March 9, 2026*\n\n## Executive Summary\n\nThis week's competitive intelligence reveals a rapidly evolving smart water management landscape with 19 new market entrants presenting both significant threats and validation of our market thesis. The sector is experiencing a bifurcation between premium professional-install solutions ($1,000+) and accessible DIY options ($200-500). Key themes include celebrity/PE backing accelerating competitive capabilities, insurance partnerships becoming table stakes, and non-invasive installation technologies threatening traditional inline approaches.\n\nCritical market developments include Phyn Plus's $25M acquisition by Property Brothers-backed investors, multiple competitors launching sub-$200 DIY solutions, and RealPage's DOJ settlement creating B2B market disruption opportunities.\n\n## New Market Entrants\n\n**High-Priority Threats:**\n- **Phyn Plus** (Celebrity-backed, $25M funding, superior ultrasonic tech)\n- **StreamLabs** (Chubb insurance backing, strong retail presence)\n- **Guardian by Elexa** (Sub-$200 price point, 15-year battery life)\n- **Grus AquaNet** (Modular system, subscription-free model)\n\n**B2B-Focused Entrants:**\n- **Wint** ($35M Series C, enterprise AI platform)\n- **FloLogic** (Bradford White acquisition, premium positioning)\n- **SimpleSUB Water** (Non-invasive clamp-on technology)\n- **Sensor Industries** (Travel + Leisure Co. backing)\n\n**Technology Disruptors:**\n- **Flume Water** (YoLink integration, utility partnerships)\n- **Water Hero** (Lower service fees, temperature monitoring)\n- **HULO** (AI+physics models, utility-scale focus)\n\n## Top 3 Threats This Week\n\n### 1. Phyn Plus Celebrity Acquisition (CRITICAL)\n- **Threat:** $25M Property Brothers investment brings unprecedented marketing power\n- **Impact:** Superior ultrasonic technology + celebrity endorsement could rapidly shift premium market\n- **Timeline:** Immediate - leveraging celebrity platform for mass market penetration\n\n### 2. Guardian by Elexa Sub-$200 Pricing (HIGH)\n- **Threat:** $199 entry point with 15-year battery life directly targets price-sensitive consumers\n- **Impact:** Could commoditize smart water shutoff category below FLO's $500 positioning\n- **Timeline:** 6-12 months - retail expansion through Lowe's, Amazon, Best Buy\n\n### 3. SimpleSUB Non-Invasive B2B Technology (HIGH)\n- **Threat:** Clamp-on cellular submetering at $349+$6/month threatens FLO's MUD portal\n- **Impact:** Eliminates installation barriers for multifamily properties\n- **Timeline:** 12-18 months - scaling beyond current $750K revenue\n\n## Market Opportunities\n\n### B2C Market Validation\n- **Celebrity endorsement trend** (Phyn Plus) validates mainstream consumer appeal\n- **Insurance partnership proliferation** confirms value proposition acceptance\n- **Price segmentation emerging** creates multiple market entry points\n\n### B2B Market Disruption\n- **RealPage DOJ settlement** creates compliance-focused sales opportunity\n- **Non-invasive technology demand** signals installation friction as key barrier\n- **Utility partnership models** (Flume's $24-64 pricing) show alternative go-to-market paths\n\n### Technology Differentiation\n- **AI-powered analytics** becoming competitive requirement (Wint, HULO examples)\n- **Offline operation capabilities** increasingly valued (FloLogic, Guardian)\n- **Modular ecosystem approach** (Grus, Mainlink) enables scalable deployments\n\n## B2B Competitive Position\n\n**Strengths:**\n- MUD portal provides integrated property management solution\n- RUBS billing capability differentiates from monitoring-only competitors\n- Established insurance partnerships remain competitive advantage\n\n**Vulnerabilities:**\n- **Non-invasive installation technology** (SimpleSUB, Bluebot) eliminates key FLO barrier\n- **Comprehensive platforms** (RealPage, SmartRent) offer broader value proposition\n- **Enterprise AI solutions** (Wint) demonstrate superior technology capabilities\n\n**Market Share Risk:**\n- SimpleSUB's $349 clamp-on solution directly threatens",
+      "errors": []
+    },
+    {
       "id": 13,
       "generated_at": "2026-03-03T21:21:42.89+00:00",
       "scope": "full",
@@ -1174,105 +2243,11 @@
           "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgfLEuqgqmgNfvSV7YtB\"}"
         }
       ]
-    },
-    {
-      "id": 4,
-      "generated_at": "2026-03-03T19:00:00.508+00:00",
-      "scope": "full",
-      "competitor_data": [
-        {
-          "pricing": "<cite index=\"12-9\">Millennial renters willing to pay 20% more for apartments with smart home features</cite>; exact pricing not disclosed but positioned as premium service with ROI focus",
-          "segment": "B2B",
-          "strengths": [
-            "<cite index=\"2-3,25-18,26-11\">End-to-end ecosystem serving 15 of top 20 multifamily operators with millions of users</cite>",
-            "<cite index=\"24-1,24-15\">Connects millions of devices across locks, thermostats, sensors and workflows for real-time operational control</cite>",
-            "<cite index=\"7-1,24-7,24-8,24-11\">AI-powered SMRT IQ platform enabling conversational analytics and instant property insights</cite>",
-            "<cite index=\"26-5,26-17\">Growing Annual Recurring Revenue (7% increase to $56.9M) with 870,000+ deployed units (11% growth)</cite>",
-            "<cite index=\"2-10,2-11,2-12\">Water leak detection with early alerts saving thousands on repairs</cite>",
-            "<cite index=\"5-18\">Self-guided tours boosting weekly tours by 60% for some properties</cite>"
-          ],
-          "competitor": "SmartRent",
-          "weaknesses": [
-            "<cite index=\"26-4,26-6\">Revenue declining 11% in Q3 2025 to $36.2M with net losses continuing</cite>",
-            "<cite index=\"25-8,25-9\">Q1 2025 goodwill impairment of $24.9M indicating asset valuation challenges</cite>",
-            "<cite index=\"30-24,30-25\">Acknowledged lack of success in channel partner program requiring sales organization restructuring</cite>",
-            "<cite index=\"26-19\">Required $30M annualized cost reduction program indicating operational inefficiencies</cite>",
-            "Limited specific water management focus compared to dedicated water leak prevention solutions"
-          ],
-          "threatLevel": "Medium",
-          "floAdvantage": "FLO's dedicated water shutoff technology ($500 Flo by Moen) and specialized water monitoring provides more focused water damage prevention than SmartRent's broader but less specialized smart home platform",
-          "researchDate": "2026-03-03",
-          "strategicSignal": "<cite index=\"24-1,24-15,7-1,24-8\">SmartRent's AI-powered SMRT IQ platform for real-time analytics represents the future of property technology - FLO should accelerate AI integration in water management analytics</cite>",
-          "threatRationale": "<cite index=\"1-2,2-3\">Strong market position with comprehensive automation suite but financial struggles and broader focus limit direct water management competition</cite>",
-          "recentDevelopments": [
-            "<cite index=\"3-3,3-7\">Participated in 2026 CONNECTIONS Summit at CES highlighting smart technologies reshaping multifamily communities (January 2026)</cite>",
-            "<cite index=\"24-7,24-8,24-11,7-1,7-7\">Launched SMRT IQ AI-powered intelligence platform allowing natural language queries for real-time device and operational insights</cite>",
-            "<cite index=\"24-24,29-10\">Expanded platform with enhanced energy management and HVAC optimization tools</cite>",
-            "<cite index=\"7-12,7-17\">Appointed Frank Martell as President and CEO, bringing 30+ years executive experience from loanDepot and CoreLogic</cite>",
-            "<cite index=\"7-17,7-18\">Added Pankaj Bansi as Chief Transformation Officer to drive enterprise transformation and scalable processes</cite>"
-          ]
-        }
-      ],
-      "executive_report": "",
-      "errors": [
-        {
-          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgfJgDJmrqmqMcdGMP9M\"}",
-          "competitor": "Quext IoT"
-        },
-        {
-          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgfJnkCtvkwqt6cAJpQt\"}",
-          "competitor": "Yardi Utility Management"
-        },
-        {
-          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgfJv6EXT1WFG5La4BCE\"}",
-          "competitor": "RealPage Utility Management"
-        },
-        {
-          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgfK3QGX1EMcLtSHoyPp\"}",
-          "competitor": "Conservice"
-        },
-        {
-          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgfK9aLgHMWUPnK4vgiU\"}",
-          "competitor": "Livable"
-        },
-        {
-          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgfKGnvmyjRpqgSznZkS\"}",
-          "competitor": "Ratio Utilities"
-        },
-        {
-          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgfKPYE7BCm89LiNjtP2\"}",
-          "competitor": "Phyn Plus"
-        },
-        {
-          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgfKX6eWHq7bSsMExiNZ\"}",
-          "competitor": "Grohe Sense Guard"
-        },
-        {
-          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgfKdYbguuJfTEUyF1iY\"}",
-          "competitor": "Resideo Leak Defense"
-        },
-        {
-          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgfKkWnygUX7aqCBtMtZ\"}",
-          "competitor": "Leak Smart"
-        },
-        {
-          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgfKrg8PsyzEAjSmdvV7\"}",
-          "competitor": "Govee Water Sensor"
-        },
-        {
-          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgfKywgjiWxsTHgdUA8d\"}",
-          "competitor": "Alert Labs"
-        },
-        {
-          "step": "report_synthesis",
-          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgfL6Sc7ccxjydkGu3u3\"}"
-        }
-      ]
     }
   ],
   "settings": {
-    "lastRun": "2026-03-03T21:21:42.89+00:00",
+    "lastRun": "2026-03-09T20:55:53.993+00:00",
     "scope": "full"
   },
-  "builtAt": "2026-03-03T21:21:44.283Z"
+  "builtAt": "2026-03-09T20:55:56.119Z"
 }
