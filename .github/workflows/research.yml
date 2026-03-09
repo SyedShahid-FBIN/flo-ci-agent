@@ -19,7 +19,7 @@ jobs:
   run-research:
     name: Run Competitive Research
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 90
     permissions:
       contents: write
     steps:
