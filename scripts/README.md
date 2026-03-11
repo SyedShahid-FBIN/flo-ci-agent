@@ -11,7 +11,7 @@ Autonomous competitive intelligence agent for FLO Technologies. Researches 13 co
 | Service | What it does | Cost |
 |---|---|---|
 | GitHub (free account) | Hosts code + runs the cron via Actions | **Free** |
-| GitHub Pages | Hosts the dashboard UI | **Free** |
+| GitHub Pages | Hosts the dashboard UI | **Free** (public repo only on free plan) |
 | Supabase (free tier) | Stores reports (500MB, plenty) | **Free** |
 | Anthropic API | AI research (~13 competitors/week) | **~$0.20/week** |
 
@@ -25,7 +25,8 @@ Go to https://github.com/signup and create a free account.
 ### Step 2 — Create the repository
 1. Go to https://github.com/new
 2. Name it: `flo-ci-agent`
-3. Set to **Private** (recommended) or Public
+3. Set to **Public** (required for GitHub Pages on a free GitHub account)
+   - ⚠️ **GitHub Pages for private repositories requires a paid GitHub plan** (GitHub Pro, Team, or Enterprise Cloud). If you are on a free account, you must use a public repository for the dashboard to be hosted. If you need the repo private, upgrade your plan or use an alternative hosting method.
 4. Click **Create repository**
 
 ### Step 3 — Upload the code
@@ -51,6 +52,8 @@ git push -u origin main
 3. Branch: `main`, Folder: `/docs`
 4. Click Save
 5. Your dashboard will be live at: `https://YOUR_USERNAME.github.io/flo-ci-agent`
+
+> **⚠️ Note:** GitHub Pages is available for free on **public** repositories. For **private** repositories, GitHub Pages requires a paid GitHub plan (GitHub Pro, Team, or Enterprise Cloud). If you are on a free GitHub account, ensure the repository is set to **Public** in Step 2.
 
 ### Step 5 — Create a Supabase project
 1. Go to https://supabase.com and sign up (free)
