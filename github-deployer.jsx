@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const OWNER = "SyedShahid-FBIN";
 const REPO = "flo-ci-agent";
-const TOKEN = "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";
+
 
 const FILES = [
   {
