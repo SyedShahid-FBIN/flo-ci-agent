@@ -1,6 +1,83 @@
 {
   "reports": [
     {
+      "id": 18,
+      "generated_at": "2026-03-23T11:40:42.081+00:00",
+      "scope": "full",
+      "competitor_data": [],
+      "executive_report": "",
+      "errors": [
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CZKwS9zqdx4EvXRhBAzL3\"}",
+          "competitor": "Phyn Plus"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CZKwUNXiAdmv6HisqaRLz\"}",
+          "competitor": "Resideo Leak Defense"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CZKwWb467ZJiRgyAAJggM\"}",
+          "competitor": "SmartRent"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CZKwYofAnHnJ1dHEeoUEg\"}",
+          "competitor": "Yardi Utility Management"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CZKwb2CY3TCMmyBiXnq8X\"}",
+          "competitor": "RealPage Utility Management"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CZKwdEjekFuDbxKvFWYxN\"}",
+          "competitor": "Conservice"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CZKwfTKW3nKutm2UbPFBg\"}",
+          "competitor": "Itron"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CZKwhgHfJZKmMmPqKUayU\"}",
+          "competitor": "Badger Meter"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CZKwjtsm3Gws5z4exswaY\"}",
+          "competitor": "Roost"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CZKwn7TMXBSWutMRqYY1y\"}",
+          "competitor": "Ting (Whisker Labs)"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CZKwpL1DfLUFXxVFjPgbR\"}",
+          "competitor": "WaterSignal"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CZKwrYcoF3kDWVx7qDTzM\"}",
+          "competitor": "Aquicore"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CZKwtm8vNJNEZuQg9Z2EG\"}",
+          "competitor": "Grohe Sense Guard"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CZKwvyfnzdprY6ENRJYfD\"}",
+          "competitor": "LeakSmart"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CZKwyCGdaX2DUeqDjXkdQ\"}",
+          "competitor": "Govee Water Sensor"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CZKx1QqEjLGz41AjQSB6z\"}",
+          "competitor": "Alert Labs"
+        },
+        {
+          "step": "report_synthesis",
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CZKx1R2tiYYuB26JspFTe\"}"
+        }
+      ]
+    },
+    {
       "id": 17,
       "generated_at": "2026-03-19T22:22:33.713+00:00",
       "scope": "full",
@@ -7896,76 +7973,11 @@
           "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYghmkaUWk4NVHLenhB7b\"}"
         }
       ]
-    },
-    {
-      "id": 8,
-      "generated_at": "2026-03-03T19:30:24.917+00:00",
-      "scope": "full",
-      "competitor_data": [],
-      "executive_report": "",
-      "errors": [
-        {
-          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYghcvABe7DSV8fVuRqH4\"}",
-          "competitor": "SmartRent"
-        },
-        {
-          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYghd54DauexSqDKLYLVG\"}",
-          "competitor": "Quext IoT"
-        },
-        {
-          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYghdCZApzSBvJkpmkHvX\"}",
-          "competitor": "Yardi Utility Management"
-        },
-        {
-          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYghdKRunJdJUBVCZder7\"}",
-          "competitor": "RealPage Utility Management"
-        },
-        {
-          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYghdRmQbvgJTrgTMEHHG\"}",
-          "competitor": "Conservice"
-        },
-        {
-          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYghdYm6gVwRcFn8Xmm78\"}",
-          "competitor": "Livable"
-        },
-        {
-          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYghdf2PAfrvjgBpJhfSZ\"}",
-          "competitor": "Ratio Utilities"
-        },
-        {
-          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYghdn3Z1kuSwRfZnX5Gh\"}",
-          "competitor": "Phyn Plus"
-        },
-        {
-          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYghdtr5jD3oR31Kgi2ZP\"}",
-          "competitor": "Grohe Sense Guard"
-        },
-        {
-          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYghe3xm8Uo7hKe5BqZNJ\"}",
-          "competitor": "Resideo Leak Defense"
-        },
-        {
-          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgheCFLfAYoWzFj1GTSS\"}",
-          "competitor": "Leak Smart"
-        },
-        {
-          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgheKsj2wfS3CXJguyQh\"}",
-          "competitor": "Govee Water Sensor"
-        },
-        {
-          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgheTgmzZ4yQx6xZoymX\"}",
-          "competitor": "Alert Labs"
-        },
-        {
-          "step": "report_synthesis",
-          "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: b7a07c14-4c45-4e68-9545-38ed2b885e30, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CYgheaUJwv74HuqpD4gey\"}"
-        }
-      ]
     }
   ],
   "settings": {
-    "lastRun": "2026-03-19T22:22:33.713+00:00",
+    "lastRun": "2026-03-23T11:40:42.081+00:00",
     "scope": "full"
   },
-  "builtAt": "2026-03-19T22:22:35.264Z"
+  "builtAt": "2026-03-23T11:40:43.352Z"
 }
