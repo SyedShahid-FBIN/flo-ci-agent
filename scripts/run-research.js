@@ -149,12 +149,20 @@ async function runLoop(system, prompt) {
 // ─── PROMOTED SEEDS ───────────────────────────────────────────────────────────
 // Supabase table: promoted_seeds
 // Schema: name text PK, segment text, sub_segment text, focus text, first_seen text, run_count int
+//
+// PROMOTION_THRESHOLD: a discovered new entrant must appear in this many distinct
+// weekly runs before being auto-promoted into the seed list. Higher = more signal,
+// less noise; lower = faster promotion of emerging names. Tune as the agent matures.
+const PROMOTION_THRESHOLD = 4;
 
 async function loadPromotedSeeds() {
   try {
     var res = await supabase.from("promoted_seeds").select("*");
-    if (res.error) { console.log("Note: promoted_seeds table not found, skipping"); return []; }
-    var promoted = (res.data || []).filter(function(r) { return r.run_count >= 2; });
+    if (res.error) {
+      console.log("Note: promoted_seeds load failed, skipping. error=" + res.error.message + " code=" + (res.error.code || "?"));
+      return [];
+    }
+    var promoted = (res.data || []).filter(function(r) { return r.run_count >= PROMOTION_THRESHOLD; });
     return promoted.map(function(r) {
       return { name: r.name, segment: r.segment, subSegment: r.sub_segment, focus: r.focus, isNewEntrant: false, autoPromoted: true };
     });
@@ -166,14 +174,29 @@ async function updatePromotedSeeds(newEntrantResults) {
   for (var i = 0; i < newEntrantResults.length; i++) {
     var r = newEntrantResults[i];
     var name = r.competitor;
+    if (!name || !String(name).trim()) {
+      console.error("  promoted_seeds: skipping result with no competitor name");
+      continue;
+    }
     try {
-      var existing = await supabase.from("promoted_seeds").select("run_count").eq("name", name).single();
+      // .maybeSingle() returns { data: null, error: null } when no row exists.
+      // .single() returns a PGRST116 error in that case, which conflates
+      // "row not found" with real failures (RLS denial, schema mismatch, etc.).
+      var existing = await supabase.from("promoted_seeds").select("run_count").eq("name", name).maybeSingle();
+      if (existing.error) {
+        console.error("  promoted_seeds SELECT failed for " + name + ": " + existing.error.message + " code=" + (existing.error.code || "?"));
+        continue;
+      }
       if (existing.data) {
         var newCount = (existing.data.run_count || 1) + 1;
-        await supabase.from("promoted_seeds").update({ run_count: newCount }).eq("name", name);
-        if (newCount >= 2) console.log("  AUTO-PROMOTED to seeds: " + name + " (seen in " + newCount + " runs)");
+        var upd = await supabase.from("promoted_seeds").update({ run_count: newCount }).eq("name", name);
+        if (upd.error) {
+          console.error("  promoted_seeds UPDATE failed for " + name + ": " + upd.error.message + " code=" + (upd.error.code || "?"));
+          continue;
+        }
+        if (newCount >= PROMOTION_THRESHOLD) console.log("  AUTO-PROMOTED to seeds: " + name + " (seen in " + newCount + " runs)");
       } else {
-        await supabase.from("promoted_seeds").insert({
+        var ins = await supabase.from("promoted_seeds").insert({
           name: name,
           segment: r.segment,
           sub_segment: r.subSegment || null,
@@ -181,9 +204,13 @@ async function updatePromotedSeeds(newEntrantResults) {
           first_seen: new Date().toISOString(),
           run_count: 1
         });
-        console.log("  Tracked new entrant for promotion: " + name + " (1/2 runs needed)");
+        if (ins.error) {
+          console.error("  promoted_seeds INSERT failed for " + name + ": " + ins.error.message + " code=" + (ins.error.code || "?"));
+          continue;
+        }
+        console.log("  Tracked new entrant for promotion: " + name + " (1/" + PROMOTION_THRESHOLD + " runs needed)");
       }
-    } catch(e) { console.error("  promoted_seeds update failed for " + name + ": " + e.message); }
+    } catch(e) { console.error("  promoted_seeds upsert threw for " + name + ": " + e.message); }
   }
 }
 
