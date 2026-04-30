@@ -309,6 +309,7 @@ async function researchCompetitor(comp) {
   if (!match) throw new Error("No JSON for " + comp.name);
   var result = JSON.parse(match[0]);
   result.isNewEntrant = comp.isNewEntrant || false;
+  result.autoPromoted = comp.autoPromoted || false;
   result.subSegment = result.subSegment || comp.subSegment || null;
   return result;
 }
