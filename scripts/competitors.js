@@ -15,6 +15,7 @@ const COMPETITORS = {
     { name: "Leak Smart", focus: "automatic water shutoff valve" },
     { name: "Govee Water Sensor", focus: "affordable water leak sensors" },
     { name: "Alert Labs", focus: "water monitoring for insurance and property" },
+    { name: "PlumBuddy", focus: "smart water shutoff valve with ultrasonic leak detection for homeowners" },
   ],
 };
 
