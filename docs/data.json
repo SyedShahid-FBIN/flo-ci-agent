@@ -1,6 +1,191 @@
 {
   "reports": [
     {
+      "id": 33,
+      "generated_at": "2026-06-25T14:39:07.752+00:00",
+      "scope": "full",
+      "competitor_data": [],
+      "executive_report": "",
+      "errors": [
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "Phyn Plus"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "Resideo Leak Defense"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "SmartRent"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "Yardi Utility Management"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "RealPage Utility Management"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "Conservice"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "Itron"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "Badger Meter"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "Roost"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "Ting (Whisker Labs)"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "WaterSignal"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "Aquicore"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "Grohe Sense Guard"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "LeakSmart"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "Govee Water Sensor"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "Alert Labs"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "Boon (formerly Swajal)"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "Aquaria"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "AquaScope"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "Flume"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "H2O Degree"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "HULO"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "FIDO Tech"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "Hydrific"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "KarIoT"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "LAIIER"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "Metron"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "Notation Labs (LeakSecure)"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "MayimFlow"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "Orbis Intelligent Systems"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "Oxyle"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "Pluvion"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "Sensor Industries"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "StormHarvester"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "StreamLabs Water"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "Sustainico"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "Submer"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "Watergate AI"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "Watergenics"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "RainStick"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "VivoAquatics"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "Namara Water Technologies"
+        },
+        {
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
+          "competitor": "SimpleSUB Water"
+        },
+        {
+          "step": "report_synthesis",
+          "error": "404 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close"
+        }
+      ]
+    },
+    {
       "id": 32,
       "generated_at": "2026-06-22T14:50:20.871+00:00",
       "scope": "full",
@@ -18930,88 +19115,11 @@
           "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CaFEZYZ2zAqye5Ws4zYYU\"}"
         }
       ]
-    },
-    {
-      "id": 23,
-      "generated_at": "2026-04-20T10:35:42.668+00:00",
-      "scope": "full",
-      "competitor_data": [],
-      "executive_report": "",
-      "errors": [
-        {
-          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CaEs8FJp9CK5wKxzFJZwt\"}",
-          "competitor": "Phyn Plus"
-        },
-        {
-          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CaEsAU558k7DSz7sTZj7G\"}",
-          "competitor": "Resideo Leak Defense"
-        },
-        {
-          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CaEsCgsZbF4sFV4ZVm2QZ\"}",
-          "competitor": "SmartRent"
-        },
-        {
-          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CaEsEusTbLkzuiRWQLr1A\"}",
-          "competitor": "Yardi Utility Management"
-        },
-        {
-          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CaEsH8fxTM8Bto3gW3TKA\"}",
-          "competitor": "RealPage Utility Management"
-        },
-        {
-          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CaEsKMnJEyCDvYBgap5va\"}",
-          "competitor": "Conservice"
-        },
-        {
-          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CaEsMadmNJLQ3VFrAeNjY\"}",
-          "competitor": "Itron"
-        },
-        {
-          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CaEsPqP6ES5Yao5t3kX3o\"}",
-          "competitor": "Badger Meter"
-        },
-        {
-          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CaEsS4UScEAxSrAVhyZvN\"}",
-          "competitor": "Roost"
-        },
-        {
-          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CaEsUHDDioL9gUn9t7iiJ\"}",
-          "competitor": "Ting (Whisker Labs)"
-        },
-        {
-          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CaEsWVyUYxy9A9gPj2AUT\"}",
-          "competitor": "WaterSignal"
-        },
-        {
-          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CaEsYiiVxjVUdJ2h8Bici\"}",
-          "competitor": "Aquicore"
-        },
-        {
-          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CaEsawaTtu4DK8vEZKUHm\"}",
-          "competitor": "Grohe Sense Guard"
-        },
-        {
-          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CaEsdAJEnuLbRkG5gzfVo\"}",
-          "competitor": "LeakSmart"
-        },
-        {
-          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CaEsfP4kQgQJckj7sfwP8\"}",
-          "competitor": "Govee Water Sensor"
-        },
-        {
-          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CaEshbxCgYzN47TZS941e\"}",
-          "competitor": "Alert Labs"
-        },
-        {
-          "step": "report_synthesis",
-          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CaEshcNzyHZbJ13DHT9nj\"}"
-        }
-      ]
     }
   ],
   "settings": {
-    "lastRun": "2026-06-22T14:50:20.871+00:00",
+    "lastRun": "2026-06-25T14:39:07.752+00:00",
     "scope": "full"
   },
-  "builtAt": "2026-06-22T14:50:22.083Z"
+  "builtAt": "2026-06-25T14:39:08.855Z"
 }
