@@ -130,7 +130,7 @@ async function runLoop(system, prompt) {
     i++;
     var res = await anthropic.messages.create({
       model: "claude-sonnet-4-6",
-      max_tokens: 1500,
+      max_tokens: 4000,
       system: system,
       tools: [{ type: "web_search_20250305", name: "web_search" }],
       messages: messages
@@ -382,7 +382,7 @@ async function main() {
   try {
     var res = await anthropic.messages.create({
       model: "claude-sonnet-4-6",
-      max_tokens: 2000,
+      max_tokens: 4000,
       system: REPORT_SYSTEM,
       messages: [{ role: "user", content: "Weekly CI data: " + seedCount + " seeded competitors + " + newCount + " newly discovered.\n\n" + JSON.stringify(results, null, 2) + "\n\nGenerate the executive report." }]
     });
