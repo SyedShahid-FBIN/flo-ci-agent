@@ -364,7 +364,7 @@ async function main() {
       errors.push({ competitor: comp.name, error: e.message });
     }
     if (i < toResearch.length - 1) {
-      await new Promise(function(r) { setTimeout(r, 30000); });
+      await new Promise(function(r) { setTimeout(r, 5000); });
     }
   }
 
