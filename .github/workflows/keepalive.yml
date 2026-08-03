@@ -10,17 +10,31 @@ jobs:
     name: Ping Supabase
     runs-on: ubuntu-latest
     steps:
-      - name: Query reports table to reset inactivity timer
+      - name: Write heartbeat row to keep the database active
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
         run: |
-          code=$(curl -s -o /dev/null -w "%{http_code}" \
-            "${SUPABASE_URL}/rest/v1/reports?select=id&limit=1" \
+          # A cached GET does NOT reset Supabase's free-tier inactivity timer
+          # (proven 2026-08-03: daily 200-returning reads still let the project
+          # pause exactly 7 days after the last real write). An upsert is
+          # uncacheable, reaches Postgres, and executes a real transaction.
+          # The __keepalive__ row keeps run_count=1 (below PROMOTION_THRESHOLD=4)
+          # so run-research.js never loads or researches it.
+          resp=$(curl -s -w "\n%{http_code}" -X POST \
+            "${SUPABASE_URL}/rest/v1/promoted_seeds?on_conflict=name" \
             -H "apikey: ${SUPABASE_KEY}" \
-            -H "Authorization: Bearer ${SUPABASE_KEY}")
-          echo "Supabase REST responded HTTP $code"
-          if [ "$code" != "200" ]; then
-            echo "::error::Keep-alive failed (HTTP $code). If the project is paused, restore it once in the Supabase dashboard."
+            -H "Authorization: Bearer ${SUPABASE_KEY}" \
+            -H "Content-Type: application/json" \
+            -H "Cache-Control: no-cache" \
+            -H "Prefer: resolution=merge-duplicates,return=representation" \
+            -d "[{\"name\":\"__keepalive__\",\"segment\":\"internal\",\"sub_segment\":null,\"focus\":\"keepalive heartbeat - ignored by agent\",\"first_seen\":\"$(date -u +%Y-%m-%dT%H:%M:%SZ)\",\"run_count\":1}]")
+          code=$(echo "$resp" | tail -n1)
+          body=$(echo "$resp" | sed '$d')
+          echo "Supabase write responded HTTP $code"
+          echo "Row: $body"
+          if [ "$code" -lt 200 ] || [ "$code" -ge 300 ]; then
+            echo "::error::Keep-alive WRITE failed (HTTP $code). If the project is PAUSED, restore it once from the Supabase dashboard (Resume project) — API calls cannot un-pause it."
             exit 1
           fi
+          echo "Heartbeat committed — real Postgres write, inactivity timer reset."
