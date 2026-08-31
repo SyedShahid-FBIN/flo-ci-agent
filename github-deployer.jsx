@@ -14,6 +14,7 @@ Autonomous competitive intelligence agent for FLO Technologies. Researches 13 co
 
 ## Setup Steps
 1. Enable GitHub Pages: Settings → Pages → Branch: main, Folder: /docs
+   ⚠️ GitHub Pages for private repos requires a paid GitHub plan (Pro/Team/Enterprise Cloud). Use a public repo on a free account.
 2. Create Supabase project at supabase.com, run supabase-setup.sql
 3. Add secrets: Settings → Secrets → Actions → ANTHROPIC_API_KEY, SUPABASE_URL, SUPABASE_KEY
 4. Trigger first run: Actions → FLO Competitive Intelligence Agent → Run workflow
@@ -22,7 +23,8 @@ Autonomous competitive intelligence agent for FLO Technologies. Researches 13 co
 https://SyedShahid-FBIN.github.io/flo-ci-agent
 
 ## Cost
-- GitHub Actions + Pages: Free
+- GitHub Actions: Free
+- GitHub Pages: Free (public repo) / Paid plan required (private repo)
 - Supabase: Free
 - Anthropic API: ~$0.20/week
 `
@@ -522,6 +524,7 @@ export default function Uploader() {
             <div className="text-sm text-green-700 space-y-1">
               <p>Next steps:</p>
               <p>1. Enable GitHub Pages: <strong>Settings → Pages → Branch: main, Folder: /docs</strong></p>
+              <p className="text-xs text-yellow-700 bg-yellow-50 border border-yellow-200 rounded p-2 mt-1">⚠️ GitHub Pages for <strong>private</strong> repositories requires a paid GitHub plan (Pro, Team, or Enterprise). If you are on a free account, ensure the repository is <strong>public</strong> so the dashboard can be hosted.</p>
               <p>2. Create Supabase project & run <strong>supabase-setup.sql</strong></p>
               <p>3. Add 3 secrets: <strong>Settings → Secrets → Actions</strong></p>
               <p>4. Trigger first run: <strong>Actions → FLO CI Agent → Run workflow</strong></p>
