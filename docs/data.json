@@ -1,6 +1,435 @@
 {
   "reports": [
     {
+      "id": 44,
+      "generated_at": "2026-09-28T17:29:11.364+00:00",
+      "scope": "full",
+      "competitor_data": [],
+      "executive_report": "",
+      "errors": [
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWDguikAVxJxmAExxWVN\"}",
+          "competitor": "Phyn Plus"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWDnbhCNLuhs1vnxgHj2\"}",
+          "competitor": "Resideo Leak Defense"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWDnzi3i4zevK7zmrJZR\"}",
+          "competitor": "SmartRent"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWDoNqKbi6m2HvY9fY4J\"}",
+          "competitor": "Yardi Utility Management"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWDom1535ACPgDTSZtEc\"}",
+          "competitor": "RealPage Utility Management"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWDp957hkSeWbqPB6Gdb\"}",
+          "competitor": "Conservice"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWDpXJasU5P5T8cYcozV\"}",
+          "competitor": "Itron"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWDpuQ7rUqtJWNPSyJYb\"}",
+          "competitor": "Badger Meter"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWDqHa7X21RMADyTZPWi\"}",
+          "competitor": "Roost"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWDqfidPTFPNzmdbqybj\"}",
+          "competitor": "Ting (Whisker Labs)"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWDr4342GhJ1vG4JHUgA\"}",
+          "competitor": "WaterSignal"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWDrSAKs83ZCLg1GZVDr\"}",
+          "competitor": "Aquicore"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWDrq3z6oDyo4zm3Uanc\"}",
+          "competitor": "Grohe Sense Guard"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWDsDAkhiV2hwosqHmF7\"}",
+          "competitor": "LeakSmart"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWDsbL1qthuuUUMjJGPm\"}",
+          "competitor": "Govee Water Sensor"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWDszNr1NM8mbFHHXfDs\"}",
+          "competitor": "Alert Labs"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWDtNW7nWvnRYGnzpLsm\"}",
+          "competitor": "Boon (formerly Swajal)"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWDtkkpn5pMN1RrZFwWd\"}",
+          "competitor": "120Water"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWDu9132kVygNjLZnG98\"}",
+          "competitor": "Aquaria"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWDuXHEagJFGdgLsyCh9\"}",
+          "competitor": "AquaScope"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWDuuLnbax4UgajcrPqX\"}",
+          "competitor": "DrizzleX"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWDvHdyHN519C2j9Zgy3\"}",
+          "competitor": "Flume"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWDvfsCSfL4zbfNSWSCj\"}",
+          "competitor": "H2O Degree"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWDw47uaMEkfhYnDYBGv\"}",
+          "competitor": "HULO"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWDwSQbcCCG7QYENiJtY\"}",
+          "competitor": "FIDO Tech"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWDwpfoePTJnM2XHaZXh\"}",
+          "competitor": "Hydrific"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWDxCnaUax6syZqcUzuM\"}",
+          "competitor": "KarIoT"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWDxb33PMHJ99WsrY465\"}",
+          "competitor": "LAIIER"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWDxyF2BofKqsUmY2HxW\"}",
+          "competitor": "Metron"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWDyMaSWkm75YiZRzuHc\"}",
+          "competitor": "Notation Labs (LeakSecure)"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWDyjgUM6LiPWLxZ6AxV\"}",
+          "competitor": "MayimFlow"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWDz81u16fxAzVECWY4S\"}",
+          "competitor": "NOWi Sensors"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWDzW7vWj3QTm32jS2j3\"}",
+          "competitor": "Olea Edge Analytics"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWDztJuoeqqxpwK5Q6Cu\"}",
+          "competitor": "Orbis Intelligent Systems"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWE1GZNjYxVW4mJA37Ms\"}",
+          "competitor": "Oxyle"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWE1ecRh8W6MsLZGMMsw\"}",
+          "competitor": "Pluvion"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWE25EWwhxrddqYg3oRJ\"}",
+          "competitor": "Sensor Industries"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWE2TVUT7NfPLDkzuYec\"}",
+          "competitor": "StormHarvester"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWE2qdys3S4wqz7iqtNq\"}",
+          "competitor": "StreamLabs Water"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWE3DvBbjtUyvo2BHMf8\"}",
+          "competitor": "Sustainico"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWE3c7RD361W6aZL7xNo\"}",
+          "competitor": "ProSentry"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWE3zQ7WFBNEnP8dKDeg\"}",
+          "competitor": "Submer"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWE4NepYiHfUphrfpwB1\"}",
+          "competitor": "Subeca"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWE4kjMy6GQnbN6zWhxJ\"}",
+          "competitor": "Watergate AI"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWE58rt1HV6EDJVkyoXx\"}",
+          "competitor": "Watergenics"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWE5X2PJujoRbPLf1djd\"}",
+          "competitor": "RainStick"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWE5uKpV2NSpSiJRL4PD\"}",
+          "competitor": "LeakSense"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWE6HRbygdHnUoUjPJHZ\"}",
+          "competitor": "VivoAquatics"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWE6g4P7hTYNiBqLembM\"}",
+          "competitor": "Namara Water Technologies"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWE74E8X376DxkyzTTNV\"}",
+          "competitor": "SimpleSUB Water"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWE7SRNh4PYpoLHbssXR\"}",
+          "competitor": "Cobalt Water Global"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWE7padHWqAhrGbCjqus\"}",
+          "competitor": "Savearth"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWE8CpLs5RQpHmrakp84\"}",
+          "competitor": "WINT Water Intelligence"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWE8aw7ah4bTqLnMm8zt\"}",
+          "competitor": "VODA.ai"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWE8yBq4eFgnooZ5tZGt\"}",
+          "competitor": "Smartvatten"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWE9MFseQdzMNaBofi5C\"}",
+          "competitor": "Ondo InsurTech (LeakBot)"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWE9jcnFbHC4B8VT4jCN\"}",
+          "competitor": "Enzo (SafeHome GmbH)"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWEA7mnc9NMnnKFC4bEh\"}",
+          "competitor": "LeakSentinel"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWEAVwnc5tL6gh1PNzmL\"}",
+          "competitor": "Droople"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWEAt3Zx8K4yhwj5Yc2o\"}",
+          "competitor": "AQUAIOT"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWEBGxxv4hBEUceks9GG\"}",
+          "competitor": "SMART FLOW Monitoring"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWEBf2WUMeitXqpuCU51\"}",
+          "competitor": "AquaSeca"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWEC3QfMjbpfsHwxMYMN\"}",
+          "competitor": "ASTERRA (formerly Utilis)"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWECRfNSZNzs9QY8gPzT\"}",
+          "competitor": "Beagle Services"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWECoodnWy49UGu4gMTB\"}",
+          "competitor": "Shayp"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWEDBwtzbiHL9gcK62hw\"}",
+          "competitor": "FluidLytix"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWEDaBcRDMSLdSV9YMLU\"}",
+          "competitor": "LeakSecure (Notation Labs)"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWEDxNrAtHpHQnFnrGDJ\"}",
+          "competitor": "Hydrific (LIXIL)"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWEELZbCTjx9EzhmoFbx\"}",
+          "competitor": "MadisonWater (WASENS)"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWEEipYpEJN6xhS2nioS\"}",
+          "competitor": "SmartH2O (Connect IoT)"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWEF72XfnvcJdhqtS3ay\"}",
+          "competitor": "Aquasight"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWEFVGVqTPDGwVuXuNzu\"}",
+          "competitor": "Pydro"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWEFsdebRRH2SLCyGYKF\"}",
+          "competitor": "Quandify"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWEGHMRDa3P9bEwjLNMB\"}",
+          "competitor": "Divirod"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWEGfa9Gjgq7iP6MFZby\"}",
+          "competitor": "Conservation Labs"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWEH3mt1h8c4LJWRwmkj\"}",
+          "competitor": "Kairos Water"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWEHRycZiExFGSPd9Pq7\"}",
+          "competitor": "Current Software"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWEHp4Q183TugW1kpRkp\"}",
+          "competitor": "Infogrid"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWEJCLrDwSiU6tvtkd4w\"}",
+          "competitor": "HydroPoint"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWEJaUcMH43b5Qi37NRJ\"}",
+          "competitor": "HULO (HULO.ai)"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWEJxkK5zV2UdbUwQ8nM\"}",
+          "competitor": "Ayyeka"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWEKLpMe622bYi7S9mcm\"}",
+          "competitor": "Nimble Vision"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWEKizrdNSLAZyGfhxRH\"}",
+          "competitor": "Kando"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWEL6xhjdxH2CtMBkaV7\"}",
+          "competitor": "PREVENTIO GmbH"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWELVvL373oxEsYw7JQt\"}",
+          "competitor": "Idrica"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWELtD2HY9xNU8DDWnnr\"}",
+          "competitor": "Motmot Inc."
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWEMGM389SsRPFW3EnqF\"}",
+          "competitor": "PipeIn"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWEMecVN3us6eQgcCQqE\"}",
+          "competitor": "Sunfish Inc."
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWEN2rx4iMyaZPf4jfHV\"}",
+          "competitor": "Eddy Solutions"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWENRCsL9FENYsD3Wcz3\"}",
+          "competitor": "Quensus"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWENoPcKgUBU7F7jDiyC\"}",
+          "competitor": "Symmons Industries (Evolution)"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWEPBc63SJ2CoebZjPMa\"}",
+          "competitor": "EnviroSmarts"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWEPZj7DZo1Tpsb1krGC\"}",
+          "competitor": "FluxGen Sustainable Technologies"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWEPwrNy5t39i6jTmha1\"}",
+          "competitor": "The Detection Group (Trident)"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWEQL7LHezZCKWBQ2cr7\"}",
+          "competitor": "inField Solutions (infieldIQ)"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWEQiLZ9DEumy9ecWZhc\"}",
+          "competitor": "Aquaro"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWER6ixLwobyw7gtvqHk\"}",
+          "competitor": "Dune Labs"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWERUqybxkCucQiiVVZ4\"}",
+          "competitor": "Connect IoT (SmartH2O)"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWERs7vhzDbk6U5JFx1f\"}",
+          "competitor": "NOWA (formerly Inflotrolix)"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWESFDi29E6tjQFXGfvu\"}",
+          "competitor": "Sensurance"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWESdLygRKaXpCTXpMYV\"}",
+          "competitor": "Water Hero"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWET1SWRyZVaxvZHtH3X\"}",
+          "competitor": "Aquana (Geospace Technologies)"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWETPdkUkoERS3nUAHwy\"}",
+          "competitor": "Symmons Evolution"
+        },
+        {
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWETn1emdLH5E6BLtw9w\"}",
+          "competitor": "Intellitect Water"
+        },
+        {
+          "step": "report_synthesis",
+          "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CfWETneM4K2EiKpVMmFPd\"}"
+        }
+      ]
+    },
+    {
       "id": 43,
       "generated_at": "2026-09-07T17:36:55.449+00:00",
       "scope": "full",
@@ -35203,196 +35632,11 @@
           "error": "400 Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close"
         }
       ]
-    },
-    {
-      "id": 34,
-      "generated_at": "2026-06-25T20:01:50.266+00:00",
-      "scope": "full",
-      "competitor_data": [],
-      "executive_report": "",
-      "errors": [
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "Phyn Plus"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "Resideo Leak Defense"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "SmartRent"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "Yardi Utility Management"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "RealPage Utility Management"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "Conservice"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "Itron"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "Badger Meter"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "Roost"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "Ting (Whisker Labs)"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "WaterSignal"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "Aquicore"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "Grohe Sense Guard"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "LeakSmart"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "Govee Water Sensor"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "Alert Labs"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "Boon (formerly Swajal)"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "Aquaria"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "AquaScope"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "Flume"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "H2O Degree"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "HULO"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "FIDO Tech"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "Hydrific"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "KarIoT"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "LAIIER"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "Metron"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "Notation Labs (LeakSecure)"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "MayimFlow"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "Orbis Intelligent Systems"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "Oxyle"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "Pluvion"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "Sensor Industries"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "StormHarvester"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "StreamLabs Water"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "Sustainico"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "Submer"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "Watergate AI"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "Watergenics"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "RainStick"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "VivoAquatics"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "Namara Water Technologies"
-        },
-        {
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close",
-          "competitor": "SimpleSUB Water"
-        },
-        {
-          "step": "report_synthesis",
-          "error": "Invalid response body while trying to fetch https://api.anthropic.com/v1/messages: Premature close"
-        }
-      ]
     }
   ],
   "settings": {
-    "lastRun": "2026-09-07T17:36:55.449+00:00",
+    "lastRun": "2026-09-28T17:29:11.364+00:00",
     "scope": "full"
   },
-  "builtAt": "2026-09-07T17:36:57.218Z"
+  "builtAt": "2026-09-28T17:29:13.847Z"
 }
